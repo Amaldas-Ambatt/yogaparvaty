@@ -4,15 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Parvati Scuola di Yoga | Sorengo - Lugano & Santhivanam India</title>
-  <meta name="description" content="Autentica scuola di Hatha Yoga, Kayakalpa Yoga e Meditazione a Sorengo-Lugano (Svizzera) guidata dall'Acharya Sooryanarayan. Sede in Via Ponte Tresa 7B, Sorengo. Ritiri residenziali in Kerala presso Santhivanam Ashram." />
-  <meta name="keywords" content="Parvati Scuola di Yoga, Yoga Lugano, Yoga Sorengo, Acharya Sooryanarayan, Hatha Yoga Ticino, Kayakalpa Yoga, Santhivanam Ashram, Via Ponte Tresa 7B Sorengo, Ritiri Yoga India Svizzera" />
+  <meta name="description" content="Scuola fondata nel 1996 a Sorengo-Lugano dall'Acharya Sooryanarayan (Mohan). Hatha Yoga, Maha Kundalini Yoga, Kayakalpa, Pranayama, Karma Reading, Karmic Healing e ritiri in Kerala presso Santhivanam Ashram." />
+  <meta name="keywords" content="Parvati Scuola di Yoga, Yoga Lugano, Yoga Sorengo, Acharya Sooryanarayan, Acharya Mohan, Hatha Yoga Ticino, Maha Kundalini Yoga, Kayakalpa Yoga, Karma Reading Lugano, Karmic Healing, Santhivanam Ashram, Via Ponte Tresa 7B Sorengo" />
 
   <!-- Canonical & Social Sharing Meta Tags -->
   <link rel="canonical" href="https://yogaparvaty.com" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yogaparvaty.com" />
   <meta property="og:title" content="Parvati Scuola di Yoga | Sorengo - Lugano & Santhivanam" />
-  <meta property="og:description" content="Autentica tradizione yogica a Sorengo-Lugano con l'Acharya Sooryanarayan. Hatha Yoga, Kayakalpa e ritiri in Kerala. Sede in Via Ponte Tresa 7B, Sorengo." />
+  <meta property="og:description" content="Autentica tradizione yogica a Sorengo-Lugano dal 1996 con l'Acharya Sooryanarayan. Hatha, Maha Kundalini, Kayakalpa e sedute di Karma Reading & Healing." />
+  <meta property="og:image" content="https://yogaparvaty.com/assets/images/scuola-yoga-parvati-logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/scuola-yoga-parvati-logo.png" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,9 +74,11 @@
     .text-balance {
       text-wrap: balance;
     }
-    .image-placeholder {
-      background: linear-gradient(135deg, #f3efe6 0%, #e8e2d5 100%);
-      border: 2px dashed #d4a359;
+    .gold-glow {
+      box-shadow: 0 10px 30px -10px rgba(212, 163, 89, 0.35);
+    }
+    .gold-glow-hover:hover {
+      box-shadow: 0 15px 35px -8px rgba(212, 163, 89, 0.45);
     }
   </style>
 </head>
@@ -84,11 +90,15 @@
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
       <div class="flex items-center gap-2">
         <span class="inline-block w-2 h-2 rounded-full bg-templeGold animate-pulse"></span>
-        <span data-i18n="top_bar_location">Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Svizzera &bull; Santhivanam Ashram (Kerala, India)</span>
+        <span data-i18n="top_bar_location">Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Svizzera • Santhivanam Ashram (Kerala, India)</span>
       </div>
       <div class="flex items-center gap-4 text-xs font-medium">
         <a id="topbar-wa-link" href="https://wa.me/41794683258?text=Buongiorno%20Acharya%20Sooryanarayan,%20vorrei%20informazioni%20sulle%20lezioni%20a%20Parvati%20Scuola%20di%20Yoga%20a%20Sorengo." target="_blank" rel="noopener noreferrer" class="hover:text-templeGold-light transition flex items-center gap-1">
           <span data-i18n="top_bar_wa_label">📞 WhatsApp Studio:</span> <strong>+41 79 468 32 58</strong>
+        </a>
+        <span class="hidden md:inline text-ivory/30">|</span>
+        <a href="tel:+41919945068" class="hidden md:inline hover:text-templeGold-light transition">
+          <span data-i18n="top_bar_tel_label">Fisso:</span> +41 91 994 50 68
         </a>
         <span class="text-ivory/30">|</span>
         
@@ -105,11 +115,9 @@
   <header class="sticky top-0 z-50 glass-nav border-b border-parvatiSand/60 transition-all duration-300 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Brand Logo -->
+      <!-- Brand Logo with Authentic Emblem -->
       <a href="#" class="flex items-center space-x-3 group">
-        <div class="w-11 h-11 rounded-full bg-alpineForest border border-templeGold/70 flex items-center justify-center text-templeGold shadow-sm group-hover:scale-105 transition-transform duration-300">
-          <span class="font-serif text-lg font-bold">ॐ</span>
-        </div>
+        <img src="assets/images/scuola-yoga-parvati-logo.png" alt="Parvati Scuola di Yoga" class="w-12 h-12 rounded-full object-cover border border-templeGold/70 shadow-sm group-hover:scale-105 transition-transform duration-300 bg-ivory" />
         <div class="flex flex-col">
           <span class="font-display text-lg sm:text-xl font-bold tracking-widest text-alpineForest uppercase">
             PARVATI
@@ -121,12 +129,14 @@
       </a>
 
       <!-- Desktop Nav Menu -->
-      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-alpineForest">
+      <nav class="hidden lg:flex items-center space-x-5 text-sm font-medium text-alpineForest">
         <a href="#scuola" class="hover:text-roseTerracotta transition" data-i18n="nav_school">La Scuola</a>
         <a href="#maestro" class="hover:text-roseTerracotta transition" data-i18n="nav_teacher">L'Acharya</a>
-        <a href="#corsi" class="hover:text-roseTerracotta transition" data-i18n="nav_courses">Corsi & Orari</a>
+        <a href="#corsi" class="hover:text-roseTerracotta transition" data-i18n="nav_courses">Corsi</a>
+        <a href="#sedute" class="hover:text-roseTerracotta transition" data-i18n="nav_sessions">Sedute Individuali</a>
+        <a href="#orari" class="hover:text-roseTerracotta transition" data-i18n="nav_schedule">Orari & Prezzi</a>
         <a href="#ritiri" class="hover:text-roseTerracotta transition" data-i18n="nav_retreats">Ritiri Kerala</a>
-        <a href="#contatti" class="hover:text-roseTerracotta transition" data-i18n="nav_contact">Contatti & Sede</a>
+        <a href="#contatti" class="hover:text-roseTerracotta transition" data-i18n="nav_contact">Contatti</a>
       </nav>
 
       <!-- WhatsApp CTA & Mobile Toggle -->
@@ -137,31 +147,33 @@
         </a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg text-alpineForest hover:bg-parvatiSand/40 focus:outline-none" aria-label="Toggle menu">
+        <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-alpineForest hover:bg-parvatiSand/40 focus:outline-none" aria-label="Toggle menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
       </div>
     </div>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobileMenu" class="hidden md:hidden bg-ivory border-b border-parvatiSand px-4 pt-2 pb-6 space-y-3">
+    <div id="mobileMenu" class="hidden lg:hidden bg-ivory border-b border-parvatiSand px-4 pt-2 pb-6 space-y-3">
       <a href="#scuola" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta border-b border-parvatiSand/40" data-i18n="nav_school">La Scuola</a>
       <a href="#maestro" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta border-b border-parvatiSand/40" data-i18n="nav_teacher">L'Acharya</a>
-      <a href="#corsi" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta border-b border-parvatiSand/40" data-i18n="nav_courses">Corsi & Orari</a>
+      <a href="#corsi" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta border-b border-parvatiSand/40" data-i18n="nav_courses">Corsi</a>
+      <a href="#sedute" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta border-b border-parvatiSand/40" data-i18n="nav_sessions">Sedute Individuali</a>
+      <a href="#orari" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta border-b border-parvatiSand/40" data-i18n="nav_schedule">Orari & Prezzi</a>
       <a href="#ritiri" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta border-b border-parvatiSand/40" data-i18n="nav_retreats">Ritiri Kerala</a>
       <a href="#contatti" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta" data-i18n="nav_contact">Contatti & Sede</a>
     </div>
   </header>
 
   <!-- ==================== HERO SECTION ==================== -->
-  <section class="relative bg-alpineForest text-ivory overflow-hidden py-24 sm:py-32">
+  <section class="relative bg-alpineForest text-ivory overflow-hidden pt-20 pb-24 sm:pt-28 sm:pb-32">
     <div class="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_top_right,#c86d51_0%,transparent_60%)]"></div>
     <div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_bottom_left,#d4a359_0%,transparent_60%)]"></div>
     
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-templeGold/30 bg-alpineForest-light/70 text-templeGold-light text-xs font-semibold tracking-widest uppercase mb-6 shadow-sm">
         <span class="w-1.5 h-1.5 rounded-full bg-templeGold"></span>
-        <span data-i18n="hero_badge">Via Ponte Tresa 7B, Sorengo - Lugano &bull; Svizzera</span>
+        <span data-i18n="hero_badge">Fondata nel 1996 a Sorengo-Lugano • Oltre 28 Anni di Tradizione</span>
       </div>
 
       <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-light tracking-wide text-ivory mb-6 text-balance">
@@ -169,56 +181,61 @@
         <span data-i18n="hero_title_sub">L'Autentica Tradizione Yogica</span>
       </h1>
 
-      <p class="max-w-2xl mx-auto font-sans text-base sm:text-lg text-ivory/80 leading-relaxed mb-10 text-balance" data-i18n="hero_description">
-        Una scuola solida e accogliente a Sorengo-Lugano, attiva da molti anni. Guidata con autorevolezza e dedizione dall'Acharya Sooryanarayan per coltivare l'equilibrio vitale, la rigenerazione cellulare e la calma interiore profonda.
+      <p class="max-w-3xl mx-auto font-sans text-base sm:text-lg text-ivory/80 leading-relaxed mb-10 text-balance" data-i18n="hero_description">
+        Un centro autentico e accogliente a Sorengo-Lugano in Via Ponte Tresa 7B. Guidato direttamente dall'Acharya Sooryanarayan (Mohan) per Hatha Yoga, Maha Kundalini Yoga, Kayakalpa, sedute di Karma Reading &amp; Healing e ritiri in Kerala.
       </p>
 
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
         <a href="#contatti" class="w-full sm:w-auto px-8 py-4 rounded-full bg-roseTerracotta hover:bg-roseTerracotta-dark text-white font-medium text-sm tracking-wider uppercase transition shadow-lg hover:shadow-roseTerracotta/30" data-i18n="hero_btn_trial">
           Prenota una Lezione di Prova
         </a>
-        <a href="#corsi" class="w-full sm:w-auto px-8 py-4 rounded-full border border-ivory/30 hover:border-templeGold hover:text-templeGold-light text-ivory text-sm font-medium tracking-wider uppercase transition" data-i18n="hero_btn_courses">
-          Scopri i Corsi
+        <a href="#orari" class="w-full sm:w-auto px-8 py-4 rounded-full border border-ivory/30 hover:border-templeGold hover:text-templeGold-light text-ivory text-sm font-medium tracking-wider uppercase transition" data-i18n="hero_btn_courses">
+          Orari &amp; Tariffe
         </a>
+      </div>
+
+      <!-- Featured Scenic Sunset Banner -->
+      <div class="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-2 border-templeGold/40 relative group bg-alpineForest-deep">
+        <img src="assets/images/banner-sunset-lugano.png" alt="Yoga Parvati Sorengo Lugano" class="w-full h-auto object-cover transform group-hover:scale-[1.01] transition duration-700" />
       </div>
 
       <!-- Quick Trust Badges -->
       <div class="mt-16 pt-10 border-t border-ivory/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div>
-          <div class="font-display text-xl sm:text-2xl font-bold text-templeGold">Via Ponte Tresa 7B</div>
-          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_loc">Studio a Sorengo (Lugano)</div>
+          <div class="font-display text-xl sm:text-2xl font-bold text-templeGold">Dal 1996</div>
+          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_loc">Oltre 28 Anni a Sorengo (Lugano)</div>
         </div>
         <div>
           <div class="font-display text-xl sm:text-2xl font-bold text-templeGold">Acharya Sooryanarayan</div>
-          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_teacher">Guida Spirituale & Maestro</div>
+          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_teacher">Maestro &amp; Guida Spirituale</div>
         </div>
         <div>
-          <div class="font-display text-xl sm:text-2xl font-bold text-templeGold">Hatha &amp; Kayakalpa</div>
-          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_tradition">Lineaggio Autentico dei Siddha</div>
+          <div class="font-display text-xl sm:text-2xl font-bold text-templeGold">Hatha, Kundalini, Kayakalpa</div>
+          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_tradition">Lineaggio dei Maestri Himalayani</div>
         </div>
         <div>
           <div class="font-display text-xl sm:text-2xl font-bold text-templeGold">Santhivanam</div>
-          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_retreats">Ritiri Residenziali in Kerala</div>
+          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_retreats">Ashram &amp; Ritiri in Kerala (India)</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== ABOUT SECTION ==================== -->
+  <!-- ==================== ABOUT SECTION (LA SCUOLA & STUDIO REAL PHOTO) ==================== -->
   <section id="scuola" class="py-20 lg:py-28 bg-ivoryDark">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         
         <div>
-          <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="about_tag">Spazio di Presenza e Serenità</span>
+          <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="about_tag">Spazio di Presenza e Serenità dal 1996</span>
           <h2 class="font-display text-3xl sm:text-4xl font-bold text-alpineForest mt-2 mb-6" data-i18n="about_heading">
             Benvenuti a Parvati Scuola di Yoga
           </h2>
           <p class="text-mutedSlate leading-relaxed mb-4" data-i18n="about_p1">
-            Prendendo il nome dalla Dea Parvati — simbolo universale di devozione, grazia e forza armoniosa — la nostra scuola ha sede in <strong>Via Ponte Tresa 7B a Sorengo</strong>, a pochissimi minuti dal centro di Lugano.
+            Prendendo il nome dalla Dea Parvati — simbolo universale di devozione, grazia e forza armoniosa — il nostro centro è attivo a <strong>Sorengo in Via Ponte Tresa 7B</strong> dal 1996, a pochi minuti dal centro di Lugano.
           </p>
           <p class="text-mutedSlate leading-relaxed mb-6" data-i18n="about_p2">
-            Non pratichiamo yoga commerciale né ginnastica affrettata. Guidiamo ogni allievo attraverso la respirazione consapevole (Pranayama), le posture stabili (Asana) e la calma interiore, rispettando il ritmo individuale di ciascun corpo sotto la guida diretta dell'Acharya Sooryanarayan.
+            Non pratichiamo yoga commerciale né ginnastica affrettata. La vita è bella: con lo yoga scopriamo la bellezza interiore attraverso la respirazione consapevole (Pranayama), le posture stabili (Asana) e la calma mentale, rispettando il ritmo individuale di ciascun corpo sotto la guida diretta dell'Acharya Sooryanarayan.
           </p>
           
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
@@ -233,18 +250,16 @@
           </div>
         </div>
 
-        <!-- Real Image Placeholder Area -->
-        <div class="relative">
-          <div class="rounded-2xl p-8 sm:p-12 image-placeholder text-center flex flex-col items-center justify-center min-h-[380px] shadow-sm">
-            <div class="w-16 h-16 rounded-full bg-templeGold/20 flex items-center justify-center text-templeGold text-2xl mb-4">
-              📷
-            </div>
-            <h3 class="font-serif text-xl font-bold text-alpineForest mb-2" data-i18n="photo_slot_studio_title">
-              Foto dello Studio a Sorengo
-            </h3>
-            <p class="text-xs text-mutedSlate max-w-sm" data-i18n="photo_slot_desc">
-              (Spazio riservato per la fotografia ufficiale della sala yoga di Via Ponte Tresa 7B a Sorengo)
-            </p>
+        <!-- Authentic Photo of Acharya with Students inside the Studio -->
+        <div class="relative group">
+          <div class="rounded-3xl overflow-hidden border-2 border-templeGold/50 shadow-2xl bg-alpineForest-deep">
+            <img src="assets/images/acharya-students-studio.jpg" alt="Acharya Sooryanarayan con gli allievi a Parvati Scuola di Yoga Sorengo" class="w-full h-[440px] sm:h-[480px] object-cover object-center group-hover:scale-105 transition duration-700" />
+          </div>
+          <div class="absolute -bottom-4 -left-4 bg-white/95 backdrop-blur-md px-5 py-3 rounded-2xl border border-parvatiSand shadow-lg flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-roseTerracotta"></span>
+            <span class="font-serif italic text-xs text-alpineForest font-semibold" data-i18n="studio_caption">
+              L'Acharya con gli allievi nella sala di Sorengo
+            </span>
           </div>
         </div>
 
@@ -252,45 +267,50 @@
     </div>
   </section>
 
-  <!-- ==================== TEACHER SECTION (ACHARYA SOORYANARAYAN) ==================== -->
+  <!-- ==================== TEACHER SECTION (ACHARYA SOORYANARAYAN REAL PHOTO & BIO) ==================== -->
   <section id="maestro" class="py-20 lg:py-28 bg-ivory">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="teacher_tag">Tradizione Vivente</span>
         <h2 class="font-display text-3xl sm:text-4xl font-bold text-alpineForest mt-2 mb-4" data-i18n="teacher_heading">
-          La Guida Spirituale: Acharya Sooryanarayan
+          La Guida Spirituale: Acharya Sooryanarayan (Mohan)
         </h2>
         <p class="text-mutedSlate text-sm sm:text-base" data-i18n="teacher_sub">
-          L'insegnamento è condotto dall'Acharya Sooryanarayan, forte di decenni di studio, pratica ininterrotta e trasmissione della saggezza yogica dei Siddha.
+          Nato in Kerala, nel sud dell'India, ha praticato yoga sin dall'infanzia secondo la tradizione familiare, approfondendo poi con grandi Maestri nell'Himalaya.
         </p>
       </div>
 
-      <!-- Acharya Sooryanarayan Spotlight Card -->
+      <!-- Acharya Spotlight Card with Authentic Photo -->
       <div class="bg-white rounded-3xl border border-parvatiSand p-8 sm:p-12 shadow-sm grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         
         <div class="md:col-span-5">
-          <div class="w-full h-80 rounded-2xl image-placeholder flex flex-col items-center justify-center text-center p-6 shadow-inner">
-            <span class="text-4xl text-templeGold mb-3">🕉️</span>
-            <span class="font-serif font-bold text-alpineForest text-lg" data-i18n="teacher_photo_acharya">Foto Acharya Sooryanarayan</span>
-            <span class="text-xs text-mutedSlate mt-1" data-i18n="teacher_photo_slot">(Spazio riservato per il ritratto dell'Acharya)</span>
+          <div class="w-full h-[440px] rounded-2xl overflow-hidden border-2 border-templeGold/50 shadow-lg relative group bg-alpineForest-deep">
+            <img src="assets/images/acharya-sooryanarayan.jpg" alt="Acharya Sooryanarayan in meditazione davanti all'altare" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-serif italic text-center">
+              Acharya Sooryanarayan &bull; Sadhana &amp; Tradizione dei Siddha
+            </div>
           </div>
         </div>
 
         <div class="md:col-span-7 flex flex-col justify-between">
           <div>
             <div class="inline-block px-3 py-1 rounded-full bg-templeGold/20 text-alpineForest text-xs font-semibold uppercase tracking-wider mb-3" data-i18n="ach_badge">
-              Maestro Fondatore
+              Maestro Fondatore dal 1996
             </div>
-            <h3 class="font-display text-3xl font-bold text-alpineForest mb-1">Acharya Sooryanarayan</h3>
+            <h3 class="font-display text-3xl font-bold text-alpineForest mb-1">Acharya Sooryanarayan (Mohan)</h3>
             <p class="text-roseTerracotta font-serif italic text-base mb-6" data-i18n="acharya_subtitle">
               Guida Spirituale &bull; Maestro di Kayakalpa &amp; Maha Kundalini Yoga
             </p>
             
             <p class="text-sm text-mutedSlate leading-relaxed mb-4" data-i18n="acharya_bio_1">
-              Quale autentica autorità nel metodo Kayakalpa e nel Maha Kundalini Yoga, l'Acharya non insegna teorie astratte: trasmette una disciplina esatta che agisce direttamente sulle cellule del corpo biologico, rigenerando la vitalità e risvegliando i centri sottili.
+              Nato in Kerala (India), ha praticato yoga sin dall'infanzia come da tradizione familiare. Dopo una formazione universitaria ha approfondito le discipline di yoga, meditazione, mantra, rituali e filosofia con grandi Maestri nell'Himalaya, insegnando Hatha e Maha Kundalini Yoga presso la celebre <em>Yoga Vedanta Forest Academy, Sivananda Ashram a Rishikesh</em>.
             </p>
-            <p class="text-sm text-mutedSlate leading-relaxed" data-i18n="acharya_bio_2">
-              Guida da molti anni <strong>Parvati Scuola di Yoga</strong> a Sorengo (Lugano), alternando le lezioni continuative e le iniziazioni in Ticino con i ritiri residenziali all'Ashram Santhivanam in Kerala (India).
+            <p class="text-sm text-mutedSlate leading-relaxed mb-4" data-i18n="acharya_bio_2">
+              Nel 1996 ha fondato a Sorengo il centro <strong>Parvati Scuola di Yoga</strong>, guidando generazioni di praticanti in Ticino e tenendo corsi, seminari internazionali e ritiri residenziali all'Ashram Santhivanam in Kerala.
+            </p>
+            <p class="text-sm text-mutedSlate leading-relaxed" data-i18n="acharya_bio_3">
+              Quale autentica autorità nel metodo Kayakalpa e nella rigenerazione cellulare, l'Acharya trasmette una disciplina esatta che agisce direttamente sul sistema biologico ed energetico per ripristinare il Prana vitale.
             </p>
           </div>
 
@@ -304,96 +324,341 @@
     </div>
   </section>
 
-  <!-- ==================== COURSES & SCHEDULE ==================== -->
+  <!-- ==================== GROUP COURSES SECTION WITH RICH IMAGES ==================== -->
   <section id="corsi" class="py-20 lg:py-28 bg-ivoryDark">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="courses_tag">I Nostri Corsi</span>
+        <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="courses_tag">I Corsi Regolari</span>
         <h2 class="font-display text-3xl sm:text-4xl font-bold text-alpineForest mt-2 mb-4" data-i18n="courses_heading">
-          Lezioni a Sorengo - Lugano
+          Lezioni di Gruppo a Sorengo - Lugano
         </h2>
         <p class="text-mutedSlate text-sm sm:text-base" data-i18n="courses_sub">
-          Dalle basi dell'Hatha Yoga alle pratiche avanzate di ringiovanimento cellulare guidate dall'Acharya Sooryanarayan.
+          Dalle posture dolci dell'Hatha Yoga all'energia sottile del Maha Kundalini e alla rigenerazione cellulare del Kayakalpa.
         </p>
       </div>
 
-      <!-- Course Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <!-- Course Cards with Artwork -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <!-- Course 1 -->
-        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-parvatiSand shadow-sm hover:border-templeGold transition">
-          <div class="text-roseTerracotta font-display text-lg font-bold mb-2">01</div>
-          <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course1_title">Hatha Yoga Tradizionale</h3>
-          <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed mb-4" data-i18n="course1_desc">
-            Postura (Asana), allineamento dolce, respiro consapevole (Pranayama) e rilassamento finale. Ideale per ritrovare flessibilità, vitalità e serenità.
-          </p>
-          <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-parvatiSand/50 text-alpineForest" data-i18n="level_all">Tutti i livelli</span>
+        <!-- Course 1: Hatha & Maha Kundalini -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
+          <div>
+            <div class="h-56 overflow-hidden relative">
+              <img src="assets/images/chakra-meditation-art.jpg" alt="Maha Kundalini Yoga" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-alpineForest/80 backdrop-blur-sm text-ivory text-xs font-semibold" data-i18n="level_all">
+                Tutti i livelli
+              </div>
+            </div>
+            <div class="p-6 sm:p-8">
+              <div class="text-roseTerracotta font-display text-sm font-bold mb-2">01 &bull; DISCIPLINA CARDINE</div>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course1_title">Hatha &amp; Maha Kundalini Yoga</h3>
+              <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="course1_desc">
+                Combinazione di Asana, respirazione dolce e risveglio del Prana interiore assopito alla base della colonna, trasformando il corpo e donando stabilità mentale e vitalità luminosa.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0">
+            <a href="#orari" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
+              <span data-i18n="btn_view_sched">Vedi Orari</span> &rarr;
+            </a>
+          </div>
         </div>
 
-        <!-- Course 2 -->
-        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-parvatiSand shadow-sm hover:border-templeGold transition">
-          <div class="text-roseTerracotta font-display text-lg font-bold mb-2">02</div>
-          <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course2_title">Kayakalpa Yoga</h3>
-          <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed mb-4" data-i18n="course2_desc">
-            Antica scienza dei Siddha trasmessa dall'Acharya Sooryanarayan per il ringiovanimento cellulare, la tonificazione degli organi interni e la trasmutazione dell'energia vitale.
-          </p>
-          <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-templeGold/20 text-alpineForest" data-i18n="level_special">Metodo Speciale</span>
+        <!-- Course 2: Kayakalpa Yoga -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
+          <div>
+            <div class="h-56 overflow-hidden relative">
+              <img src="assets/images/kayakalpa-yoga-art.jpg" alt="Kayakalpa Yoga" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-templeGold text-alpineForest-deep text-xs font-bold" data-i18n="level_special">
+                Metodo Speciale
+              </div>
+            </div>
+            <div class="p-6 sm:p-8">
+              <div class="text-roseTerracotta font-display text-sm font-bold mb-2">02 &bull; SCIENZA DEI SIDDHA</div>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course2_title">Kayakalpa Yoga</h3>
+              <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="course2_desc">
+                Millenaria scienza dei Siddha trasmessa dall'Acharya Sooryanarayan per il ringiovanimento cellulare, la tonificazione degli organi interni e la trasmutazione dell'energia vitale essenziale.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0">
+            <a href="#orari" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
+              <span data-i18n="btn_view_sched">Vedi Orari</span> &rarr;
+            </a>
+          </div>
         </div>
 
-        <!-- Course 3 -->
-        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-parvatiSand shadow-sm hover:border-templeGold transition">
-          <div class="text-roseTerracotta font-display text-lg font-bold mb-2">03</div>
-          <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course3_title">Meditazione & Pranayama</h3>
-          <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed mb-4" data-i18n="course3_desc">
-            Tecniche mirate di controllo del prana e silenzio mentale. Per sciogliere l'ansia, acuire la concentrazione e vivere nella quiete interiore.
-          </p>
-          <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-parvatiSand/50 text-alpineForest" data-i18n="level_all">Tutti i livelli</span>
+        <!-- Course 3: Pranayama & Meditazione -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
+          <div>
+            <div class="h-56 overflow-hidden relative">
+              <img src="assets/images/seven-chakras-pillar.jpg" alt="Pranayama e Meditazione" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-alpineForest/80 backdrop-blur-sm text-ivory text-xs font-semibold" data-i18n="level_all">
+                Tutti i livelli
+              </div>
+            </div>
+            <div class="p-6 sm:p-8">
+              <div class="text-roseTerracotta font-display text-sm font-bold mb-2">03 &bull; CONTROLLO DEL PRANA</div>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course3_title">Pranayama &amp; Meditazione</h3>
+              <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="course3_desc">
+                Tecniche mirate di Maha Kundalini Pranayama, Fire Breathing (respirazione del fuoco) e silenzio mentale per ripulire i canali sottili, sciogliere ansia e stress e stabilire la quiete interiore.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0">
+            <a href="#orari" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
+              <span data-i18n="btn_view_sched">Vedi Orari</span> &rarr;
+            </a>
+          </div>
         </div>
 
       </div>
 
-      <!-- Weekly Schedule Box -->
-      <div class="bg-white rounded-2xl border border-parvatiSand p-6 sm:p-8 max-w-4xl mx-auto shadow-sm">
-        <h3 class="font-serif text-2xl font-bold text-alpineForest mb-6 text-center" data-i18n="sched_title">
-          Orari Settimanali Indicativi (Via Ponte Tresa 7B, Sorengo)
-        </h3>
+    </div>
+  </section>
+
+  <!-- ==================== SPECIAL INDIVIDUAL SESSIONS SECTION ==================== -->
+  <section id="sedute" class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="sessions_tag">Percorsi Individuali Profondi</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-alpineForest mt-2 mb-4" data-i18n="sessions_heading">
+          Karma Reading, Karmic Healing &amp; Benessere Energetico
+        </h2>
+        <p class="text-mutedSlate text-sm sm:text-base" data-i18n="sessions_sub">
+          Sedute individuali su appuntamento a Sorengo condotte direttamente dall'Acharya Sooryanarayan per sciogliere blocchi karmici e rigenerare il corpo.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Session 1: Karma Reading -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
+          <div>
+            <div class="h-64 overflow-hidden relative">
+              <img src="assets/images/karma-reading.png" alt="Karma Reading - Lettura del Karma" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-roseTerracotta text-white text-xs font-semibold" data-i18n="badge_individual">
+                Seduta Individuale
+              </div>
+            </div>
+            <div class="p-6 sm:p-8">
+              <div class="text-templeGold-dark font-display text-xs font-bold mb-2 tracking-wider uppercase">LETTURA DELLE VITE PASSATE</div>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="session1_title">Karma Reading</h3>
+              <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="session1_desc">
+                Tutti siamo curiosi di sapere il nostro futuro, ma per conoscere il futuro è indispensabile comprendere il passato. Karma Reading aiuta a comprendere le vite passate e come le energie trasmesse influiscono sulla vita attuale, illuminando sui blocchi per liberarsene definitivamente.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 sm:p-8 pt-0">
+            <a href="#contatti" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
+              <span data-i18n="btn_book_session">Prenota Seduta</span> &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Session 2: Karmic Healing & Karma Design -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
+          <div>
+            <div class="h-64 overflow-hidden relative">
+              <img src="assets/images/karmic-healing.png" alt="Karmic Healing e Karma Design" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-roseTerracotta text-white text-xs font-semibold" data-i18n="badge_individual">
+                Seduta Individuale
+              </div>
+            </div>
+            <div class="p-6 sm:p-8">
+              <div class="text-templeGold-dark font-display text-xs font-bold mb-2 tracking-wider uppercase">LIBERAZIONE &amp; DESTINO</div>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="session2_title">Karmic Healing &amp; Karma Design</h3>
+              <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="session2_desc">
+                Un percorso individuale mirato ad individuare i blocchi karmici radicati, fornendo gli strumenti energetici per neutralizzarli ed eliminarli dalla vita presente, così da diventare Maestri della propria vita e progettare il proprio futuro.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 sm:p-8 pt-0">
+            <a href="#contatti" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
+              <span data-i18n="btn_book_session">Prenota Seduta</span> &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Session 3: Chakra Detox & Body Cleaning -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
+          <div>
+            <div class="h-64 overflow-hidden relative">
+              <img src="assets/images/kayakalpa-meditazione-poster.png" alt="Chakra Detox e Body Cleaning" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-roseTerracotta text-white text-xs font-semibold" data-i18n="badge_treatment">
+                Trattamento Energetico
+              </div>
+            </div>
+            <div class="p-6 sm:p-8">
+              <div class="text-templeGold-dark font-display text-xs font-bold mb-2 tracking-wider uppercase">PURIFICAZIONE DEI CHAKRA</div>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="session3_title">Chakra Detox &amp; Body Cleaning</h3>
+              <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="session3_desc">
+                Combinazione di chakra massage, Fire Breathing (respirazione del fuoco), canalizzazione del Prana e tecniche ayurvediche per ripristinare il flusso energetico, eliminare scorie e dolori cellulari e ridonare un corpo forte e una mente serena.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 sm:p-8 pt-0">
+            <a href="#contatti" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
+              <span data-i18n="btn_book_session">Prenota Seduta</span> &rarr;
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SCHEDULE & PRICING (ORARI & TARIFFE) ==================== -->
+  <section id="orari" class="py-20 lg:py-28 bg-ivoryDark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="sched_tag">Orario Ufficiale &amp; Tariffe</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-alpineForest mt-2 mb-4" data-i18n="sched_heading">
+          Orari Settimanali &bull; Sorengo - Lugano
+        </h2>
+        <p class="text-mutedSlate text-sm sm:text-base" data-i18n="sched_sub">
+          Lezioni in piccoli gruppi per garantire la massima attenzione individuale. Sede di Via Ponte Tresa 7B, Sorengo.
+        </p>
+      </div>
+
+      <!-- Pricing Cards Row -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+        <div class="bg-white p-6 rounded-2xl border border-parvatiSand shadow-sm text-center">
+          <div class="text-xs font-semibold text-roseTerracotta uppercase tracking-wider mb-1" data-i18n="price_trial_badge">Inizia Ora</div>
+          <div class="font-serif text-2xl font-bold text-alpineForest" data-i18n="price_trial_title">Lezione di Prova</div>
+          <p class="text-xs text-mutedSlate mt-2" data-i18n="price_trial_desc">Disponibile su richiesta per conoscere la scuola e l'Acharya.</p>
+        </div>
+
+        <div class="bg-alpineForest text-ivory p-6 rounded-2xl border border-templeGold/50 shadow-md text-center transform sm:-translate-y-2">
+          <div class="text-xs font-semibold text-templeGold uppercase tracking-wider mb-1" data-i18n="price_pass_badge">Corsi di Gruppo</div>
+          <div class="font-display text-3xl font-bold text-templeGold">Fr. 250.--</div>
+          <div class="font-serif text-sm font-medium text-ivory/90 mt-1" data-i18n="price_pass_title">Abbonamento 10 Lezioni</div>
+          <p class="text-xs text-ivory/70 mt-2" data-i18n="price_pass_desc">Valido per tutte le lezioni di gruppo settimanali in sala.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-parvatiSand shadow-sm text-center">
+          <div class="text-xs font-semibold text-roseTerracotta uppercase tracking-wider mb-1" data-i18n="price_ind_badge">Su Misura</div>
+          <div class="font-serif text-2xl font-bold text-alpineForest" data-i18n="price_ind_title">Lezioni &amp; Sedute Individuali</div>
+          <p class="text-xs text-mutedSlate mt-2" data-i18n="price_ind_desc">Karma Reading, Karmic Healing e lezioni private su appuntamento.</p>
+        </div>
+      </div>
+
+      <!-- Detailed Weekly Schedule Table -->
+      <div class="bg-white rounded-3xl border border-parvatiSand p-6 sm:p-10 max-w-4xl mx-auto shadow-sm mb-12">
+        <div class="flex flex-col sm:flex-row justify-between items-center pb-6 border-b border-parvatiSand mb-6 gap-3">
+          <h3 class="font-serif text-2xl font-bold text-alpineForest" data-i18n="table_title">
+            Tabella Orari Settimanali
+          </h3>
+          <span class="text-xs px-3 py-1 rounded-full bg-parvatiSand/60 text-alpineForest font-semibold" data-i18n="table_badge_active">
+            Sede Via Ponte Tresa 7B, Sorengo
+          </span>
+        </div>
         
         <div class="overflow-x-auto">
           <table class="w-full text-left text-sm">
             <thead>
-              <tr class="border-b border-parvatiSand text-xs uppercase tracking-wider text-mutedSlate font-semibold">
-                <th class="py-3 px-4" data-i18n="th_day">Giorno</th>
-                <th class="py-3 px-4" data-i18n="th_time">Orario</th>
-                <th class="py-3 px-4" data-i18n="th_course">Corso</th>
-                <th class="py-3 px-4" data-i18n="th_teacher">Guida</th>
+              <tr class="border-b border-parvatiSand text-xs uppercase tracking-wider text-mutedSlate font-semibold bg-ivory/60">
+                <th class="py-3.5 px-4" data-i18n="th_day">Giorno</th>
+                <th class="py-3.5 px-4" data-i18n="th_time">Orario</th>
+                <th class="py-3.5 px-4" data-i18n="th_course">Corso / Disciplina</th>
+                <th class="py-3.5 px-4" data-i18n="th_teacher">Insegnante</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-parvatiSand/40">
-              <tr>
-                <td class="py-3 px-4 font-medium text-alpineForest" data-i18n="day_mon">Lunedì</td>
-                <td class="py-3 px-4 text-mutedSlate">18:30 - 20:00</td>
-                <td class="py-3 px-4 font-serif font-bold text-alpineForest" data-i18n="course1_title">Hatha Yoga Tradizionale</td>
-                <td class="py-3 px-4 text-xs font-semibold text-alpineForest">Acharya Sooryanarayan</td>
+              <!-- Lunedì -->
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 font-semibold text-alpineForest" rowspan="2" data-i18n="day_mon">Lunedì</td>
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">09:00</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_mk">Maha Kundalini Yoga</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
               </tr>
-              <tr>
-                <td class="py-3 px-4 font-medium text-alpineForest" data-i18n="day_wed">Mercoledì</td>
-                <td class="py-3 px-4 text-mutedSlate">19:00 - 20:30</td>
-                <td class="py-3 px-4 font-serif font-bold text-alpineForest" data-i18n="course2_title">Kayakalpa Yoga & Pranayama</td>
-                <td class="py-3 px-4 text-xs font-semibold text-alpineForest">Acharya Sooryanarayan</td>
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">16:00</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_yd">Yoga Dolce</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
               </tr>
-              <tr>
-                <td class="py-3 px-4 font-medium text-alpineForest" data-i18n="day_fri">Venerdì</td>
-                <td class="py-3 px-4 text-mutedSlate">09:30 - 11:00</td>
-                <td class="py-3 px-4 font-serif font-bold text-alpineForest" data-i18n="course3_title">Yoga Dolce & Meditazione</td>
-                <td class="py-3 px-4 text-xs font-semibold text-alpineForest">Acharya Sooryanarayan</td>
+
+              <!-- Martedì -->
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 font-semibold text-alpineForest" rowspan="3" data-i18n="day_tue">Martedì</td>
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">09:00</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_prana">Pranayama (Respirazione)</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+              </tr>
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">19:00</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_mk">Maha Kundalini Yoga</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+              </tr>
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">20:15</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_med">Meditazione</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+              </tr>
+
+              <!-- Mercoledì -->
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 font-semibold text-alpineForest" rowspan="4" data-i18n="day_wed">Mercoledì</td>
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">09:00</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_mk">Maha Kundalini Yoga</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+              </tr>
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">10:15</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_mk">Maha Kundalini Yoga</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+              </tr>
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">19:00</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_mk">Maha Kundalini Yoga</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+              </tr>
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">20:15</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_yd">Yoga Dolce</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+              </tr>
+
+              <!-- Giovedì -->
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 font-semibold text-alpineForest" rowspan="3" data-i18n="day_thu">Giovedì</td>
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">09:00</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_mk">Maha Kundalini Yoga</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+              </tr>
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">10:15</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_chakras">Risveglio dei Chakras</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+              </tr>
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">19:00</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_mk">Maha Kundalini Yoga</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+              </tr>
+
+              <!-- Venerdì -->
+              <tr class="hover:bg-ivory/40 transition">
+                <td class="py-3.5 px-4 font-semibold text-alpineForest" data-i18n="day_fri">Venerdì</td>
+                <td class="py-3.5 px-4 text-mutedSlate font-medium">09:00</td>
+                <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_mk">Maha Kundalini Yoga</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <p class="text-xs text-center text-mutedSlate mt-6 italic" data-i18n="sched_note">
-          * Gli orari possono variare in base ai periodi dell'anno e ai ritiri in India. Contattaci per confermare il calendario aggiornato.
+          * Gli orari possono variare in concomitanza con seminari intensivi o ritiri in India. Contattaci per confermare il calendario aggiornato.
         </p>
+      </div>
+
+      <!-- Official Timetable Card Visual -->
+      <div class="max-w-3xl mx-auto rounded-3xl overflow-hidden border-2 border-parvatiSand shadow-md bg-white p-4 sm:p-6 text-center">
+        <h4 class="font-serif font-bold text-alpineForest text-lg mb-4" data-i18n="visual_card_title">
+          Scheda Orario &amp; Tariffe Ufficiale Yoga Parvati
+        </h4>
+        <img src="assets/images/orario-settimanale.png" alt="Scheda Orario Settimanale Yoga Parvati Sorengo" class="w-full h-auto rounded-xl mx-auto shadow-sm border border-parvatiSand/50" />
       </div>
 
     </div>
@@ -405,19 +670,19 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         <div>
-          <span class="text-templeGold font-serif italic text-lg" data-i18n="retreat_tag">Il Ponte Spirituale</span>
+          <span class="text-templeGold font-serif italic text-lg" data-i18n="retreat_tag">Il Ponte Spirituale Svizzera - India</span>
           <h2 class="font-display text-3xl sm:text-4xl font-bold text-ivory mt-2 mb-6" data-i18n="retreat_heading">
             Ritiri Residenziali a Santhivanam Ashram (Kerala, India)
           </h2>
           <p class="text-ivory/80 leading-relaxed mb-4 text-sm sm:text-base" data-i18n="retreat_p1">
-            Gli allievi di Parvati Scuola di Yoga hanno l'opportunità unica di immergersi nella pratica residenziale presso il nostro ashram in India: <strong>Santhivanam Yoga Ashram</strong> a Kanakamala, Kerala.
+            Gli allievi di Parvati Scuola di Yoga hanno l'opportunità unica di proseguire la loro pratica nei ritiri residenziali presso il nostro ashram in India: <strong>Santhivanam Yoga Ashram</strong> a Kanakamala, Kerala.
           </p>
           <p class="text-ivory/80 leading-relaxed mb-6 text-sm sm:text-base" data-i18n="retreat_p2">
-            Tra colline tropicali incontaminate, cibo ayurvedico puro e sadhana quotidiana con l'Acharya Sooryanarayan, l'esperienza a Santhivanam trasforma la comprensione dello yoga in un'esperienza vivente e rigenerativa.
+            Tra colline tropicali incontaminate, cibo ayurvedico puro e sadhana quotidiana con l'Acharya Sooryanarayan, l'esperienza a Santhivanam trasforma la comprensione dello yoga in un'esperienza vivente e profondamente rigenerativa.
           </p>
 
           <div class="flex flex-wrap gap-4">
-            <a href="https://santhivanam.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-templeGold hover:bg-templeGold-dark text-alpineForest-deep font-semibold text-xs uppercase tracking-wider transition">
+            <a href="https://santhivanam.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-templeGold hover:bg-templeGold-dark text-alpineForest-deep font-semibold text-xs uppercase tracking-wider transition shadow-md">
               <span data-i18n="link_santhivanam">Visita Santhivanam.com ↗</span>
             </a>
             <a href="https://kayakalpayogam.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full border border-ivory/30 hover:border-templeGold text-ivory text-xs uppercase tracking-wider transition">
@@ -426,15 +691,13 @@
           </div>
         </div>
 
-        <!-- Retreat Photo Placeholder -->
-        <div class="rounded-2xl p-8 sm:p-12 border-2 border-dashed border-templeGold/40 bg-alpineForest-light/50 text-center flex flex-col items-center justify-center min-h-[340px]">
-          <div class="text-3xl text-templeGold mb-3">🌴</div>
-          <h3 class="font-serif text-xl font-bold text-ivory mb-2" data-i18n="retreat_photo_title">
-            Foto Santhivanam Ashram Kerala
-          </h3>
-          <p class="text-xs text-ivory/70 max-w-sm" data-i18n="retreat_photo_desc">
-            (Spazio riservato per le immagini dell'ashram, della natura tropicale e dei ritiri residenziali)
-          </p>
+        <!-- Sacred Artwork Frame for Retreats -->
+        <div class="rounded-3xl overflow-hidden border-2 border-templeGold/40 shadow-2xl relative group bg-alpineForest-light/30">
+          <img src="assets/images/kayakalpa-yoga-art.jpg" alt="Santhivanam Ashram Kerala Sadhana" class="w-full h-[400px] object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-white text-xs font-serif italic text-center">
+            Santhivanam Yoga Ashram &bull; Kanakamala, Kerala (India)
+          </div>
         </div>
 
       </div>
@@ -447,10 +710,10 @@
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="contact_tag">Inizia il Tuo Percorso</span>
         <h2 class="font-display text-3xl sm:text-4xl font-bold text-alpineForest mt-2 mb-4" data-i18n="contact_heading">
-          Contattaci & Vieni a Trovarci
+          Contattaci &amp; Prenota la Tua Lezione
         </h2>
         <p class="text-mutedSlate text-sm sm:text-base" data-i18n="contact_sub">
-          La scuola è situata a Sorengo in Via Ponte Tresa 7B, comodamente raggiungibile da Lugano. Scrivici per informazioni o per prenotare una lezione di prova.
+          La scuola è situata a Sorengo in Via Ponte Tresa 7B, a 5 minuti dal centro di Lugano. Scrivici su WhatsApp o compila il modulo sottostante.
         </p>
       </div>
 
@@ -458,9 +721,9 @@
         
         <!-- Contact Details & Exact Address -->
         <div class="space-y-6">
-          <div class="bg-white rounded-2xl p-6 border border-parvatiSand shadow-sm">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-parvatiSand shadow-sm">
             <h3 class="font-serif text-xl font-bold text-alpineForest mb-3 flex items-center gap-2">
-              <span>📍</span> <span data-i18n="loc_title">Indirizzo della Scuola</span>
+              <span>📍</span> <span data-i18n="loc_title">Indirizzo dello Studio</span>
             </h3>
             <p class="text-sm text-charcoal font-medium leading-relaxed">
               <strong>Parvati Scuola di Yoga</strong><br />
@@ -469,38 +732,39 @@
               <span data-i18n="loc_canton">Canton Ticino, Svizzera</span>
             </p>
             <p class="text-xs text-mutedSlate mt-3 pt-3 border-t border-parvatiSand/50" data-i18n="loc_note">
-              Facilmente accessibile a 5 minuti dal centro di Lugano, vicino alla ferrovia Lugano-Ponte Tresa (stazione Sorengo).
+              Facilmente accessibile a 5 minuti da Lugano, vicino alla fermata del trenino Lugano-Ponte Tresa (stazione Sorengo).
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl p-6 border border-parvatiSand shadow-sm">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-parvatiSand shadow-sm">
             <h3 class="font-serif text-xl font-bold text-alpineForest mb-3 flex items-center gap-2">
-              <span>📞</span> <span data-i18n="phone_title">Telefono & WhatsApp</span>
+              <span>📞</span> <span data-i18n="phone_title">Numeri Telefonici &amp; WhatsApp</span>
             </h3>
             <p class="text-sm text-mutedSlate leading-relaxed">
               <span data-i18n="phone_label_mob">WhatsApp / Mobile:</span> <a href="https://wa.me/41794683258" class="text-roseTerracotta font-semibold hover:underline">+41 79 468 32 58</a><br />
-              <span data-i18n="phone_label_land">Telefono Fisso:</span> <a href="tel:+41919945068" class="text-alpineForest hover:underline">+41 91 994 50 68</a>
+              <span data-i18n="phone_label_land">Telefono Fisso:</span> <a href="tel:+41919945068" class="text-alpineForest hover:underline font-medium">+41 91 994 50 68</a>
             </p>
           </div>
 
-          <div class="bg-white rounded-2xl p-6 border border-parvatiSand shadow-sm">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-parvatiSand shadow-sm">
             <h3 class="font-serif text-xl font-bold text-alpineForest mb-3 flex items-center gap-2">
-              <span>✉️</span> <span data-i18n="email_title">Email</span>
+              <span>✉️</span> <span data-i18n="email_title">Indirizzi Email</span>
             </h3>
             <p class="text-sm text-mutedSlate leading-relaxed">
               <a href="mailto:info@yogaparvaty.com" class="text-roseTerracotta hover:underline font-medium">info@yogaparvaty.com</a><br />
+              <a href="mailto:i.parvati@bluewin.ch" class="text-alpineForest hover:underline">i.parvati@bluewin.ch</a><br />
               <a href="mailto:kayakalpayogam@gmail.com" class="text-mutedSlate hover:underline text-xs">kayakalpayogam@gmail.com</a>
             </p>
           </div>
         </div>
 
-        <!-- Interactive Direct Message Form -->
-        <div class="bg-white rounded-2xl p-8 border border-parvatiSand shadow-sm">
+        <!-- Interactive Direct Message Form (Routes to WhatsApp) -->
+        <div class="bg-white rounded-3xl p-8 sm:p-10 border border-parvatiSand shadow-sm">
           <h3 class="font-serif text-2xl font-bold text-alpineForest mb-2" data-i18n="form_title">
-            Richiesta Lezione di Prova
+            Richiesta di Informazioni o Prova
           </h3>
           <p class="text-xs text-mutedSlate mb-6" data-i18n="form_sub">
-            Compila il modulo per inviarci un messaggio diretto su WhatsApp o prenotare una prova.
+            Invia un messaggio diretto all'Acharya su WhatsApp con i dettagli della tua richiesta.
           </p>
 
           <form onsubmit="handleFormSubmit(event)" class="space-y-4">
@@ -521,21 +785,24 @@
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_course_select">Corso di Interesse</label>
+              <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_course_select">Disciplina o Seduta di Interesse</label>
               <select id="formCourse" class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm">
-                <option value="Hatha Yoga Tradizionale" data-i18n="course1_title">Hatha Yoga Tradizionale</option>
-                <option value="Kayakalpa Yoga" data-i18n="course2_title">Kayakalpa Yoga</option>
-                <option value="Yoga Dolce & Meditazione" data-i18n="opt_course_med">Yoga Dolce & Meditazione</option>
+                <option value="Hatha & Maha Kundalini Yoga" data-i18n="opt_course1">Hatha &amp; Maha Kundalini Yoga</option>
+                <option value="Kayakalpa Yoga" data-i18n="opt_course2">Kayakalpa Yoga (Scienza dei Siddha)</option>
+                <option value="Pranayama & Meditazione" data-i18n="opt_course3">Pranayama &amp; Meditazione</option>
+                <option value="Karma Reading (Lettura delle Vite Passate)" data-i18n="opt_session1">Karma Reading (Lettura delle Vite Passate)</option>
+                <option value="Karmic Healing & Karma Design" data-i18n="opt_session2">Karmic Healing &amp; Karma Design</option>
+                <option value="Chakra Detox & Body Cleaning" data-i18n="opt_session3">Chakra Detox &amp; Body Cleaning</option>
                 <option value="Ritiri in India (Santhivanam)" data-i18n="opt_course_retreat">Ritiri in India (Santhivanam)</option>
               </select>
             </div>
 
             <div>
               <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_msg">Messaggio o Note</label>
-              <textarea id="formMessage" rows="3" class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" data-i18n-placeholder="form_placeholder_msg" placeholder="Scrivi qui eventuali esigenze o richieste..."></textarea>
+              <textarea id="formMessage" rows="3" class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" data-i18n-placeholder="form_placeholder_msg" placeholder="Scrivi qui eventuali esigenze, giorni preferiti o domande..."></textarea>
             </div>
 
-            <button type="submit" class="w-full py-4 rounded-xl bg-roseTerracotta hover:bg-roseTerracotta-dark text-white font-medium text-sm tracking-wider uppercase transition shadow-md">
+            <button type="submit" class="w-full py-4 rounded-xl bg-roseTerracotta hover:bg-roseTerracotta-dark text-white font-medium text-sm tracking-wider uppercase transition shadow-md hover:shadow-roseTerracotta/30">
               <span data-i18n="form_submit">Invia Richiesta via WhatsApp</span>
             </button>
           </form>
@@ -546,23 +813,38 @@
   </section>
 
   <!-- ==================== FOOTER ==================== -->
-  <footer class="bg-alpineForest-deep text-ivory/80 py-12 border-t border-parvatiSand/20 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
-      <div>
-        <div class="font-display font-bold text-lg text-ivory tracking-widest uppercase">PARVATI SCUOLA DI YOGA</div>
-        <p class="text-ivory/60 mt-1" data-i18n="footer_sub">Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Svizzera &bull; Insegnamenti di Acharya Sooryanarayan</p>
+  <footer class="bg-alpineForest-deep text-ivory/80 py-14 border-t border-parvatiSand/20 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left pb-10 border-b border-ivory/10">
+        
+        <div class="flex items-center space-x-4">
+          <img src="assets/images/scuola-yoga-parvati-logo.png" alt="Parvati Scuola di Yoga" class="w-14 h-14 rounded-full object-cover border border-templeGold/50 bg-ivory" />
+          <div>
+            <div class="font-display font-bold text-lg text-ivory tracking-widest uppercase">PARVATI SCUOLA DI YOGA</div>
+            <p class="text-ivory/60 mt-1" data-i18n="footer_sub">Via Ponte Tresa 7B, 6924 Sorengo (Lugano) &bull; Fondata nel 1996 dall'Acharya Sooryanarayan</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 text-ivory/70 text-xs">
+          <a href="#scuola" class="hover:text-templeGold transition" data-i18n="nav_school">La Scuola</a>
+          <a href="#maestro" class="hover:text-templeGold transition" data-i18n="nav_teacher">L'Acharya</a>
+          <a href="#corsi" class="hover:text-templeGold transition" data-i18n="nav_courses">Corsi</a>
+          <a href="#sedute" class="hover:text-templeGold transition" data-i18n="nav_sessions">Sedute Individuali</a>
+          <a href="#orari" class="hover:text-templeGold transition" data-i18n="nav_schedule">Orari &amp; Prezzi</a>
+          <a href="#ritiri" class="hover:text-templeGold transition" data-i18n="nav_retreats">Ritiri Kerala</a>
+          <a href="#contatti" class="hover:text-templeGold transition" data-i18n="nav_contact">Contatti</a>
+        </div>
       </div>
 
-      <div class="flex flex-wrap items-center justify-center gap-6 text-ivory/60 text-xs">
-        <a href="#scuola" class="hover:text-templeGold transition" data-i18n="nav_school">La Scuola</a>
-        <a href="#maestro" class="hover:text-templeGold transition" data-i18n="nav_teacher">L'Acharya</a>
-        <a href="#corsi" class="hover:text-templeGold transition" data-i18n="nav_courses">Corsi</a>
-        <a href="#ritiri" class="hover:text-templeGold transition" data-i18n="nav_retreats">Ritiri Kerala</a>
-        <a href="#contatti" class="hover:text-templeGold transition" data-i18n="nav_contact">Contatti</a>
-      </div>
-
-      <div class="text-ivory/50 text-[11px]">
-        &copy; <span id="year">2026</span> Yogaparvaty.com &bull; <span data-i18n="footer_rights">Tutti i diritti riservati.</span>
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-ivory/50 text-[11px]">
+        <div>
+          &copy; <span id="year">2026</span> Yogaparvaty.com &bull; <span data-i18n="footer_rights">Tutti i diritti riservati.</span>
+        </div>
+        <div class="flex gap-4">
+          <span>Sorengo - Lugano (Svizzera)</span>
+          <span>&bull;</span>
+          <span>Santhivanam Ashram (Kerala, India)</span>
+        </div>
       </div>
     </div>
   </footer>
@@ -585,206 +867,282 @@
       const msg = document.getElementById('formMessage').value || (currentLang === 'it' ? 'Nessuna nota aggiuntiva' : 'No additional notes');
 
       const greeting = currentLang === 'it' 
-        ? `Buongiorno Acharya Sooryanarayan,%0A%0A*Richiesta da Yogaparvaty.com:*%0A*Nome:* ${encodeURIComponent(name)}%0A*Telefono:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Corso:* ${encodeURIComponent(course)}%0A*Messaggio:* ${encodeURIComponent(msg)}`
-        : `Hello Acharya Sooryanarayan,%0A%0A*Inquiry from Yogaparvaty.com:*%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Course:* ${encodeURIComponent(course)}%0A*Message:* ${encodeURIComponent(msg)}`;
+        ? `Buongiorno Acharya Sooryanarayan,%0A%0A*Richiesta da Yogaparvaty.com:*%0A*Nome:* ${encodeURIComponent(name)}%0A*Telefono:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Interesse:* ${encodeURIComponent(course)}%0A*Messaggio:* ${encodeURIComponent(msg)}`
+        : `Hello Acharya Sooryanarayan,%0A%0A*Inquiry from Yogaparvaty.com:*%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Interest:* ${encodeURIComponent(course)}%0A*Message:* ${encodeURIComponent(msg)}`;
       
       window.open(`https://wa.me/41794683258?text=${greeting}`, '_blank');
     }
 
-    // 100% Complete Bilingual Dictionary
+    // 100% Complete Bilingual Dictionary (Italian & English)
     const translations = {
       it: {
         doc_title: "Parvati Scuola di Yoga | Sorengo - Lugano & Santhivanam India",
-        meta_desc: "Autentica scuola di Hatha Yoga, Kayakalpa Yoga e Meditazione a Sorengo-Lugano (Svizzera) guidata dall'Acharya Sooryanarayan. Sede in Via Ponte Tresa 7B, Sorengo. Ritiri residenziali in Kerala presso Santhivanam Ashram.",
+        meta_desc: "Scuola fondata nel 1996 a Sorengo-Lugano dall'Acharya Sooryanarayan (Mohan). Hatha Yoga, Maha Kundalini Yoga, Kayakalpa, Pranayama, Karma Reading, Karmic Healing e ritiri in Kerala presso Santhivanam Ashram.",
         top_bar_location: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Svizzera • Santhivanam Ashram (Kerala, India)",
         top_bar_wa_label: "📞 WhatsApp Studio:",
+        top_bar_tel_label: "Fisso:",
         cta_whatsapp: "Richiedi Info",
         brand_subtitle: "Scuola di Yoga • Sorengo - Lugano",
         nav_school: "La Scuola",
         nav_teacher: "L'Acharya",
-        nav_courses: "Corsi & Orari",
+        nav_courses: "Corsi",
+        nav_sessions: "Sedute Individuali",
+        nav_schedule: "Orari & Prezzi",
         nav_retreats: "Ritiri Kerala",
-        nav_contact: "Contatti & Sede",
-        hero_badge: "Via Ponte Tresa 7B, Sorengo - Lugano • Svizzera",
+        nav_contact: "Contatti",
+        hero_badge: "Fondata nel 1996 a Sorengo-Lugano • Oltre 28 Anni di Tradizione",
         hero_title_sub: "L'Autentica Tradizione Yogica",
-        hero_description: "Una scuola solida e accogliente a Sorengo-Lugano, attiva da molti anni. Guidata con autorevolezza e dedizione dall'Acharya Sooryanarayan per coltivare l'equilibrio vitale, la rigenerazione cellulare e la calma interiore profonda.",
+        hero_description: "Un centro autentico e accogliente a Sorengo-Lugano in Via Ponte Tresa 7B. Guidato direttamente dall'Acharya Sooryanarayan (Mohan) per Hatha Yoga, Maha Kundalini Yoga, Kayakalpa, sedute di Karma Reading & Healing e ritiri in Kerala.",
         hero_btn_trial: "Prenota una Lezione di Prova",
-        hero_btn_courses: "Scopri i Corsi",
-        badge_loc: "Studio a Sorengo (Lugano)",
-        badge_teacher: "Guida Spirituale & Maestro",
-        badge_tradition: "Lineaggio Autentico dei Siddha",
-        badge_retreats: "Ritiri Residenziali in Kerala",
-        about_tag: "Spazio di Presenza e Serenità",
+        hero_btn_courses: "Orari & Tariffe",
+        badge_loc: "Oltre 28 Anni a Sorengo (Lugano)",
+        badge_teacher: "Maestro & Guida Spirituale",
+        badge_tradition: "Lineaggio dei Maestri Himalayani",
+        badge_retreats: "Ashram & Ritiri in Kerala (India)",
+        about_tag: "Spazio di Presenza e Serenità dal 1996",
         about_heading: "Benvenuti a Parvati Scuola di Yoga",
-        about_p1: "Prendendo il nome dalla Dea Parvati — simbolo universale di devozione, grazia e forza armoniosa — la nostra scuola ha sede in <strong>Via Ponte Tresa 7B a Sorengo</strong>, a pochissimi minuti dal centro di Lugano.",
-        about_p2: "Non pratichiamo yoga commerciale né ginnastica affrettata. Guidiamo ogni allievo attraverso la respirazione consapevole (Pranayama), le posture stabili (Asana) e la calma interiore, rispettando il ritmo individuale di ciascun corpo sotto la guida diretta dell'Acharya Sooryanarayan.",
+        about_p1: "Prendendo il nome dalla Dea Parvati — simbolo universale di devozione, grazia e forza armoniosa — il nostro centro è attivo a <strong>Sorengo in Via Ponte Tresa 7B</strong> dal 1996, a pochi minuti dal centro di Lugano.",
+        about_p2: "Non pratichiamo yoga commerciale né ginnastica affrettata. La vita è bella: con lo yoga scopriamo la bellezza interiore attraverso la respirazione consapevole (Pranayama), le posture stabili (Asana) e la calma mentale, rispettando il ritmo individuale di ciascun corpo sotto la guida diretta dell'Acharya Sooryanarayan.",
         about_feat1_title: "Pratica Graduale",
         about_feat1_desc: "Adatta sia a principianti che a praticanti esperti.",
         about_feat2_title: "Gruppi a Numero Chiuso",
         about_feat2_desc: "Attenzione personalizzata e cura per ogni praticante.",
-        photo_slot_studio_title: "Foto dello Studio a Sorengo",
-        photo_slot_desc: "(Spazio riservato per la fotografia ufficiale della sala yoga di Via Ponte Tresa 7B a Sorengo)",
+        studio_caption: "L'Acharya con gli allievi nella sala di Sorengo",
         teacher_tag: "Tradizione Vivente",
-        teacher_heading: "La Guida Spirituale: Acharya Sooryanarayan",
-        teacher_sub: "L'insegnamento è condotto dall'Acharya Sooryanarayan, forte di decenni di studio, pratica ininterrotta e trasmissione della saggezza yogica dei Siddha.",
-        teacher_photo_acharya: "Foto Acharya Sooryanarayan",
-        teacher_photo_slot: "(Spazio riservato per il ritratto dell'Acharya)",
-        ach_badge: "Maestro Fondatore",
+        teacher_heading: "La Guida Spirituale: Acharya Sooryanarayan (Mohan)",
+        teacher_sub: "Nato in Kerala, nel sud dell'India, ha praticato yoga sin dall'infanzia secondo la tradizione familiare, approfondendo poi con grandi Maestri nell'Himalaya.",
+        ach_badge: "Maestro Fondatore dal 1996",
         acharya_subtitle: "Guida Spirituale • Maestro di Kayakalpa & Maha Kundalini Yoga",
-        acharya_bio_1: "Quale autentica autorità nel metodo Kayakalpa e nel Maha Kundalini Yoga, l'Acharya non insegna teorie astratte: trasmette una disciplina esatta che agisce direttamente sulle cellule del corpo biologico, rigenerando la vitalità e risvegliando i centri sottili.",
-        acharya_bio_2: "Guida da molti anni Parvati Scuola di Yoga a Sorengo (Lugano), alternando le lezioni continuative e le iniziazioni in Ticino con i ritiri residenziali all'Ashram Santhivanam in Kerala (India).",
+        acharya_bio_1: "Nato in Kerala (India), ha praticato yoga sin dall'infanzia come da tradizione familiare. Dopo una formazione universitaria ha approfondito le discipline di yoga, meditazione, mantra, rituali e filosofia con grandi Maestri nell'Himalaya, insegnando Hatha e Maha Kundalini Yoga presso la celebre <em>Yoga Vedanta Forest Academy, Sivananda Ashram a Rishikesh</em>.",
+        acharya_bio_2: "Nel 1996 ha fondato a Sorengo il centro <strong>Parvati Scuola di Yoga</strong>, guidando generazioni di praticanti in Ticino e tenendo corsi, seminari internazionali e ritiri residenziali all'Ashram Santhivanam in Kerala.",
+        acharya_bio_3: "Quale autentica autorità nel metodo Kayakalpa e nella rigenerazione cellulare, l'Acharya trasmette una disciplina esatta che agisce direttamente sul sistema biologico ed energetico per ripristinare il Prana vitale.",
         teacher_card_addr_label: "Sede:",
         teacher_card_ashram_label: "Ashram:",
-        courses_tag: "I Nostri Corsi",
-        courses_heading: "Lezioni a Sorengo - Lugano",
-        courses_sub: "Dalle basi dell'Hatha Yoga alle pratiche avanzate di ringiovanimento cellulare guidate dall'Acharya Sooryanarayan.",
-        course1_title: "Hatha Yoga Tradizionale",
-        course1_desc: "Postura (Asana), allineamento dolce, respiro consapevole (Pranayama) e rilassamento finale. Ideale per ritrovare flessibilità, vitalità e serenità.",
+        courses_tag: "I Corsi Regolari",
+        courses_heading: "Lezioni di Gruppo a Sorengo - Lugano",
+        courses_sub: "Dalle posture dolci dell'Hatha Yoga all'energia sottile del Maha Kundalini e alla rigenerazione cellulare del Kayakalpa.",
+        course1_title: "Hatha & Maha Kundalini Yoga",
+        course1_desc: "Combinazione di Asana, respirazione dolce e risveglio del Prana interiore assopito alla base della colonna, trasformando il corpo e donando stabilità mentale e vitalità luminosa.",
         course2_title: "Kayakalpa Yoga",
-        course2_desc: "Antica scienza dei Siddha trasmessa dall'Acharya Sooryanarayan per il ringiovanimento cellulare, la tonificazione degli organi interni e la trasmutazione dell'energia vitale.",
-        course3_title: "Meditazione & Pranayama",
-        course3_desc: "Tecniche mirate di controllo del prana e silenzio mentale. Per sciogliere l'ansia, acuire la concentrazione e vivere nella quiete interiore.",
+        course2_desc: "Millenaria scienza dei Siddha trasmessa dall'Acharya Sooryanarayan per il ringiovanimento cellulare, la tonificazione degli organi interni e la trasmutazione dell'energia vitale essenziale.",
+        course3_title: "Pranayama & Meditazione",
+        course3_desc: "Tecniche mirate di Maha Kundalini Pranayama, Fire Breathing (respirazione del fuoco) e silenzio mentale per ripulire i canali sottili, sciogliere ansia e stress e stabilire la quiete interiore.",
         level_all: "Tutti i livelli",
         level_special: "Metodo Speciale",
-        sched_title: "Orari Settimanali Indicativi (Via Ponte Tresa 7B, Sorengo)",
+        btn_view_sched: "Vedi Orari",
+        sessions_tag: "Percorsi Individuali Profondi",
+        sessions_heading: "Karma Reading, Karmic Healing & Benessere Energetico",
+        sessions_sub: "Sedute individuali su appuntamento a Sorengo condotte direttamente dall'Acharya Sooryanarayan per sciogliere blocchi karmici e rigenerare il corpo.",
+        badge_individual: "Seduta Individuale",
+        badge_treatment: "Trattamento Energetico",
+        session1_title: "Karma Reading",
+        session1_desc: "Tutti siamo curiosi di sapere il nostro futuro, ma per conoscere il futuro è indispensabile comprendere il passato. Karma Reading aiuta a comprendere le vite passate e come le energie trasmesse influiscono sulla vita attuale, illuminando sui blocchi per liberarsene definitivamente.",
+        session2_title: "Karmic Healing & Karma Design",
+        session2_desc: "Un percorso individuale mirato ad individuare i blocchi karmici radicati, fornendo gli strumenti energetici per neutralizzarli ed eliminarli dalla vita presente, così da diventare Maestri della propria vita e progettare il proprio futuro.",
+        session3_title: "Chakra Detox & Body Cleaning",
+        session3_desc: "Combinazione di chakra massage, Fire Breathing (respirazione del fuoco), canalizzazione del Prana e tecniche ayurvediche per ripristinare il flusso energetico, eliminare scorie e dolori cellulari e ridonare un corpo forte e una mente serena.",
+        btn_book_session: "Prenota Seduta",
+        sched_tag: "Orario Ufficiale & Tariffe",
+        sched_heading: "Orari Settimanali • Sorengo - Lugano",
+        sched_sub: "Lezioni in piccoli gruppi per garantire la massima attenzione individuale. Sede di Via Ponte Tresa 7B, Sorengo.",
+        price_trial_badge: "Inizia Ora",
+        price_trial_title: "Lezione di Prova",
+        price_trial_desc: "Disponibile su richiesta per conoscere la scuola e l'Acharya.",
+        price_pass_badge: "Corsi di Gruppo",
+        price_pass_title: "Abbonamento 10 Lezioni",
+        price_pass_desc: "Valido per tutte le lezioni di gruppo settimanali in sala.",
+        price_ind_badge: "Su Misura",
+        price_ind_title: "Lezioni & Sedute Individuali",
+        price_ind_desc: "Karma Reading, Karmic Healing e lezioni private su appuntamento.",
+        table_title: "Tabella Orari Settimanali",
+        table_badge_active: "Sede Via Ponte Tresa 7B, Sorengo",
         th_day: "Giorno",
         th_time: "Orario",
-        th_course: "Corso",
-        th_teacher: "Guida",
+        th_course: "Corso / Disciplina",
+        th_teacher: "Insegnante",
         day_mon: "Lunedì",
+        day_tue: "Martedì",
         day_wed: "Mercoledì",
+        day_thu: "Giovedì",
         day_fri: "Venerdì",
-        sched_note: "* Gli orari possono variare in base ai periodi dell'anno e ai ritiri in India. Contattaci per confermare il calendario aggiornato.",
-        retreat_tag: "Il Ponte Spirituale",
+        sched_mk: "Maha Kundalini Yoga",
+        sched_yd: "Yoga Dolce",
+        sched_prana: "Pranayama (Respirazione)",
+        sched_med: "Meditazione",
+        sched_chakras: "Risveglio dei Chakras",
+        sched_note: "* Gli orari possono variare in concomitanza con seminari intensivi o ritiri in India. Contattaci per confermare il calendario aggiornato.",
+        visual_card_title: "Scheda Orario & Tariffe Ufficiale Yoga Parvati",
+        retreat_tag: "Il Ponte Spirituale Svizzera - India",
         retreat_heading: "Ritiri Residenziali a Santhivanam Ashram (Kerala, India)",
-        retreat_p1: "Gli allievi di Parvati Scuola di Yoga hanno l'opportunità unica di immergersi nella pratica residenziale presso il nostro ashram in India: Santhivanam Yoga Ashram a Kanakamala, Kerala.",
-        retreat_p2: "Tra colline tropicali incontaminate, cibo ayurvedico puro e sadhana quotidiana con l'Acharya Sooryanarayan, l'esperienza a Santhivanam trasforma la comprensione dello yoga in un'esperienza vivente e rigenerativa.",
+        retreat_p1: "Gli allievi di Parvati Scuola di Yoga hanno l'opportunità unica di proseguire la loro pratica nei ritiri residenziali presso il nostro ashram in India: Santhivanam Yoga Ashram a Kanakamala, Kerala.",
+        retreat_p2: "Tra colline tropicali incontaminate, cibo ayurvedico puro e sadhana quotidiana con l'Acharya Sooryanarayan, l'esperienza a Santhivanam trasforma la comprensione dello yoga in un'esperienza vivente e profondamente rigenerativa.",
         link_santhivanam: "Visita Santhivanam.com ↗",
         link_kayakalpa: "Visita Kayakalpayogam.com ↗",
-        retreat_photo_title: "Foto Santhivanam Ashram Kerala",
-        retreat_photo_desc: "(Spazio riservato per le immagini dell'ashram, della natura tropicale e dei ritiri residenziali)",
         contact_tag: "Inizia il Tuo Percorso",
-        contact_heading: "Contattaci & Vieni a Trovarci",
-        contact_sub: "La scuola è situata a Sorengo in Via Ponte Tresa 7B, comodamente raggiungibile da Lugano. Scrivici per informazioni o per prenotare una lezione di prova.",
-        loc_title: "Indirizzo della Scuola",
+        contact_heading: "Contattaci & Prenota la Tua Lezione",
+        contact_sub: "La scuola è situata a Sorengo in Via Ponte Tresa 7B, a 5 minuti dal centro di Lugano. Scrivici su WhatsApp o compila il modulo sottostante.",
+        loc_title: "Indirizzo dello Studio",
         loc_canton: "Canton Ticino, Svizzera",
-        loc_note: "Facilmente accessibile a 5 minuti dal centro di Lugano, vicino alla ferrovia Lugano-Ponte Tresa (stazione Sorengo).",
-        phone_title: "Telefono & WhatsApp",
+        loc_note: "Facilmente accessibile a 5 minuti da Lugano, vicino alla fermata del trenino Lugano-Ponte Tresa (stazione Sorengo).",
+        phone_title: "Numeri Telefonici & WhatsApp",
         phone_label_mob: "WhatsApp / Mobile:",
         phone_label_land: "Telefono Fisso:",
-        email_title: "Email",
-        form_title: "Richiesta Lezione di Prova",
-        form_sub: "Compila il modulo per inviarci un messaggio diretto su WhatsApp o prenotare una prova.",
+        email_title: "Indirizzi Email",
+        form_title: "Richiesta di Informazioni o Prova",
+        form_sub: "Invia un messaggio diretto all'Acharya su WhatsApp con i dettagli della tua richiesta.",
         form_name: "Nome e Cognome *",
         form_phone: "Telefono / WhatsApp *",
         form_email: "Email",
-        form_course_select: "Corso di Interesse",
-        opt_course_med: "Yoga Dolce & Meditazione",
+        form_course_select: "Disciplina o Seduta di Interesse",
+        opt_course1: "Hatha & Maha Kundalini Yoga",
+        opt_course2: "Kayakalpa Yoga (Scienza dei Siddha)",
+        opt_course3: "Pranayama & Meditazione",
+        opt_session1: "Karma Reading (Lettura delle Vite Passate)",
+        opt_session2: "Karmic Healing & Karma Design",
+        opt_session3: "Chakra Detox & Body Cleaning",
         opt_course_retreat: "Ritiri in India (Santhivanam)",
         form_msg: "Messaggio o Note",
         form_submit: "Invia Richiesta via WhatsApp",
         form_placeholder_name: "Il tuo nome",
         form_placeholder_phone: "+41 ...",
         form_placeholder_email: "nome@esempio.com",
-        form_placeholder_msg: "Scrivi qui eventuali esigenze o richieste...",
-        footer_sub: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Svizzera • Insegnamenti di Acharya Sooryanarayan",
+        form_placeholder_msg: "Scrivi qui eventuali esigenze, giorni preferiti o domande...",
+        footer_sub: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano) • Fondata nel 1996 dall'Acharya Sooryanarayan",
         footer_rights: "Tutti i diritti riservati."
       },
       en: {
         doc_title: "Parvati Yoga School | Sorengo - Lugano & Santhivanam India",
-        meta_desc: "Authentic school of Hatha Yoga, Kayakalpa Yoga, and Meditation in Sorengo-Lugano (Switzerland) guided by Acharya Sooryanarayan. Located at Via Ponte Tresa 7B, Sorengo. Residential retreats in Kerala at Santhivanam Ashram.",
+        meta_desc: "School founded in 1996 in Sorengo-Lugano by Acharya Sooryanarayan (Mohan). Hatha Yoga, Maha Kundalini Yoga, Kayakalpa, Pranayama, Karma Reading, Karmic Healing and residential retreats in Kerala at Santhivanam Ashram.",
         top_bar_location: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Switzerland • Santhivanam Ashram (Kerala, India)",
         top_bar_wa_label: "📞 WhatsApp Studio:",
+        top_bar_tel_label: "Landline:",
         cta_whatsapp: "Request Info",
         brand_subtitle: "Yoga School • Sorengo - Lugano",
         nav_school: "The School",
-        nav_teacher: "Acharya Sooryanarayan",
-        nav_courses: "Courses & Times",
+        nav_teacher: "Acharya",
+        nav_courses: "Courses",
+        nav_sessions: "Private Sessions",
+        nav_schedule: "Timetable & Rates",
         nav_retreats: "Kerala Retreats",
-        nav_contact: "Contact & Studio",
-        hero_badge: "Via Ponte Tresa 7B, Sorengo - Lugano • Switzerland",
+        nav_contact: "Contact",
+        hero_badge: "Founded in 1996 in Sorengo-Lugano • Over 28 Years of Tradition",
         hero_title_sub: "Authentic Yogic Tradition",
-        hero_description: "An authentic, welcoming yoga school in Sorengo-Lugano, active for many years. Dedicatedly guided by Acharya Sooryanarayan to cultivate vital balance, cellular rejuvenation, and deep inner stillness.",
+        hero_description: "An authentic, serene sanctuary in Sorengo-Lugano at Via Ponte Tresa 7B. Guided directly by Acharya Sooryanarayan (Mohan) for Hatha Yoga, Maha Kundalini Yoga, Kayakalpa, Karma Reading & Healing sessions and retreats in Kerala.",
         hero_btn_trial: "Book a Trial Class",
-        hero_btn_courses: "Explore Courses",
-        badge_loc: "Studio in Sorengo (Lugano)",
-        badge_teacher: "Spiritual Guide & Master",
-        badge_tradition: "Authentic Siddha Lineage",
-        badge_retreats: "Kerala Residential Retreats",
-        about_tag: "Presence & Serenity",
+        hero_btn_courses: "Timetable & Rates",
+        badge_loc: "Over 28 Years in Sorengo (Lugano)",
+        badge_teacher: "Master & Spiritual Guide",
+        badge_tradition: "Lineage of Himalayan Masters",
+        badge_retreats: "Ashram & Retreats in Kerala (India)",
+        about_tag: "Sacred Space & Inner Serenity Since 1996",
         about_heading: "Welcome to Parvati Yoga School",
-        about_p1: "Named after Mother Goddess Parvati — the universal symbol of devotion, grace, and harmonious strength — our school is located at <strong>Via Ponte Tresa 7B in Sorengo</strong>, just minutes from central Lugano.",
-        about_p2: "We do not practice commercial fitness yoga. We guide each student through conscious breathing (Pranayama), steady postures (Asana), and profound inner stillness, honoring each body's natural pace under Acharya Sooryanarayan's direct guidance.",
+        about_p1: "Named after Mother Goddess Parvati — the universal archetype of devotion, grace, and harmonious strength — our school has been active at <strong>Via Ponte Tresa 7B in Sorengo</strong> since 1996, just minutes from central Lugano.",
+        about_p2: "We do not practice commercial fitness yoga. Life is beautiful: yoga reveals inner beauty through conscious breathing (Pranayama), steady postures (Asana), and profound mental tranquility, honoring each body's rhythm under Acharya Sooryanarayan's direct guidance.",
         about_feat1_title: "Gradual Practice",
         about_feat1_desc: "Accessible and nourishing for both beginners and experienced yogis.",
         about_feat2_title: "Small Groups",
         about_feat2_desc: "Personalized attention and care for every practitioner.",
-        photo_slot_studio_title: "Sorengo Studio Photo",
-        photo_slot_desc: "(Reserved space for official photo of the yoga hall at Via Ponte Tresa 7B, Sorengo)",
+        studio_caption: "Acharya with students inside the Sorengo yoga hall",
         teacher_tag: "Living Tradition",
-        teacher_heading: "The Spiritual Guide: Acharya Sooryanarayan",
-        teacher_sub: "Teachings directly guided by Acharya Sooryanarayan, drawing upon decades of continuous sadhana and transmission of authentic Siddha yoga wisdom.",
-        teacher_photo_acharya: "Photo Acharya Sooryanarayan",
-        teacher_photo_slot: "(Reserved space for photo)",
-        ach_badge: "Founding Master",
+        teacher_heading: "The Spiritual Guide: Acharya Sooryanarayan (Mohan)",
+        teacher_sub: "Born in Kerala (South India), he has practiced yoga since childhood according to ancestral family tradition, subsequently deepening his sadhana with great Himalayan Masters.",
+        ach_badge: "Founding Master Since 1996",
         acharya_subtitle: "Spiritual Guide • Master of Kayakalpa & Maha Kundalini Yoga",
-        acharya_bio_1: "A living authority on Kayakalpa and Maha Kundalini Yoga, Acharya does not teach vague theories: he transmits an exact physiological science acting directly upon biological cells to restore vitality and open subtle channels.",
-        acharya_bio_2: "He has guided Parvati Yoga School in Sorengo (Lugano) for many years, alternating ongoing teachings in Switzerland with residential retreats at Santhivanam Ashram in Kerala (India).",
+        acharya_bio_1: "Born in Kerala (India), he practiced yoga from childhood following family lineage. Following university education, he immersed himself in advanced yoga, meditation, mantra, rituals, and philosophy with Himalayan Masters, later teaching Hatha and Maha Kundalini Yoga at the renowned <em>Yoga Vedanta Forest Academy, Sivananda Ashram in Rishikesh</em>.",
+        acharya_bio_2: "In 1996, he founded <strong>Parvati Yoga School</strong> in Sorengo, mentoring generations of practitioners across Ticino while conducting international seminars and residential retreats at Santhivanam Ashram in Kerala.",
+        acharya_bio_3: "An acknowledged authority on Kayakalpa cellular rejuvenation, Acharya transmits an exact physiological and energetic science acting directly upon biological cells to restore vital Prana.",
         teacher_card_addr_label: "Studio:",
         teacher_card_ashram_label: "Ashram:",
-        courses_tag: "Our Programs",
-        courses_heading: "Classes in Sorengo - Lugano",
-        courses_sub: "From foundational Hatha Yoga to advanced cellular rejuvenation sadhana led by Acharya Sooryanarayan.",
-        course1_title: "Traditional Hatha Yoga",
-        course1_desc: "Gentle postures (Asana), structural alignment, conscious breathwork (Pranayama), and restorative relaxation. Ideal for flexibility and nervous system reset.",
+        courses_tag: "Regular Programs",
+        courses_heading: "Group Classes in Sorengo - Lugano",
+        courses_sub: "From gentle Hatha alignment to subtle Kundalini awakening and Kayakalpa cellular renewal.",
+        course1_title: "Hatha & Maha Kundalini Yoga",
+        course1_desc: "A harmonious integration of Asana, steady breathwork, and awakening of dormant inner Prana coiled at the base of the spine, revitalizing physical health and establishing mental clarity.",
         course2_title: "Kayakalpa Yoga",
-        course2_desc: "Millennial Siddha science imparted by Acharya Sooryanarayan for cellular regeneration, endocrine tonification, and vital life-force transmutation.",
-        course3_title: "Meditation & Pranayama",
-        course3_desc: "Targeted breath control techniques and inner stillness. Dissolves anxiety, sharpens focus, and establishes abiding inner peace.",
+        course2_desc: "Ancient Siddha science transmitted by Acharya Sooryanarayan for cellular regeneration, endocrine tonification, and the transmutation of vital life force.",
+        course3_title: "Pranayama & Meditation",
+        course3_desc: "Targeted Maha Kundalini breath control techniques, Fire Breathing, and mental stillness to cleanse subtle nadis, dissolve nervous tension, and ground enduring inner peace.",
         level_all: "All Levels",
         level_special: "Special Lineage",
-        sched_title: "Indicative Weekly Timetable (Via Ponte Tresa 7B, Sorengo)",
+        btn_view_sched: "View Times",
+        sessions_tag: "In-Depth Private Journeys",
+        sessions_heading: "Karma Reading, Karmic Healing & Energetic Balance",
+        sessions_sub: "Private sessions by appointment in Sorengo conducted personally by Acharya Sooryanarayan to resolve karmic blockages and regenerate the body.",
+        badge_individual: "Private Session",
+        badge_treatment: "Energy Treatment",
+        session1_title: "Karma Reading",
+        session1_desc: "We are all curious about our future, but to truly understand the future, one must know the past. Karma Reading reveals past lives and clarifies how inherited karmic imprints affect present circumstances, providing clarity to release old blocks and live with purpose.",
+        session2_title: "Karmic Healing & Karma Design",
+        session2_desc: "A personalized journey to pinpoint deep-seated karmic knots and receive precise spiritual keys to neutralize them in this lifetime, allowing you to become the master of your own destiny.",
+        session3_title: "Chakra Detox & Body Cleaning",
+        session3_desc: "A synergistic blend of chakra massage, Fire Breathing, Prana channeling, and Ayurvedic techniques to eliminate cellular toxins, harmonize all 7 chakras, and restore vibrant health.",
+        btn_book_session: "Book Session",
+        sched_tag: "Official Schedule & Fees",
+        sched_heading: "Weekly Timetable • Sorengo - Lugano",
+        sched_sub: "Small group classes ensuring individualized guidance. Studio at Via Ponte Tresa 7B, Sorengo.",
+        price_trial_badge: "Begin Today",
+        price_trial_title: "Trial Class",
+        price_trial_desc: "Available upon request to experience the studio and meet Acharya.",
+        price_pass_badge: "Group Classes",
+        price_pass_title: "10-Class Pass",
+        price_pass_desc: "Valid for all weekly group sessions at the studio.",
+        price_ind_badge: "Personalized",
+        price_ind_title: "Private Classes & Sessions",
+        price_ind_desc: "Karma Reading, Karmic Healing, and private yoga sessions by appointment.",
+        table_title: "Weekly Timetable Overview",
+        table_badge_active: "Studio Via Ponte Tresa 7B, Sorengo",
         th_day: "Day",
         th_time: "Time",
-        th_course: "Course",
-        th_teacher: "Guide",
+        th_course: "Class / Discipline",
+        th_teacher: "Instructor",
         day_mon: "Monday",
+        day_tue: "Tuesday",
         day_wed: "Wednesday",
+        day_thu: "Thursday",
         day_fri: "Friday",
-        sched_note: "* Timetable may adjust across seasons and during residential retreats in India. Please contact us to confirm current schedule.",
-        retreat_tag: "The Sacred Bridge",
+        sched_mk: "Maha Kundalini Yoga",
+        sched_yd: "Gentle Yoga",
+        sched_prana: "Pranayama (Breathwork)",
+        sched_med: "Meditation",
+        sched_chakras: "Chakras Awakening",
+        sched_note: "* Timetable may adjust during intensive workshops or retreats in India. Please contact us to confirm current schedule.",
+        visual_card_title: "Official Yoga Parvati Timetable & Rates Card",
+        retreat_tag: "The Sacred Bridge Switzerland - India",
         retreat_heading: "Residential Retreats at Santhivanam Ashram (Kerala, India)",
-        retreat_p1: "Students of Parvati Yoga School enjoy the rare opportunity to immerse themselves in residential sadhana at our sister ashram in India: Santhivanam Yoga Ashram in Kanakamala, Kerala.",
-        retreat_p2: "Surrounded by pristine tropical hills, nourishing Ayurvedic meals, and daily sadhana under Acharya Sooryanarayan's guidance, Santhivanam grounds yoga as a living, restorative reality.",
+        retreat_p1: "Students of Parvati Yoga School enjoy the special privilege of advancing their sadhana during residential retreats at our ashram in India: Santhivanam Yoga Ashram in Kanakamala, Kerala.",
+        retreat_p2: "Surrounded by pristine tropical hills, pure Ayurvedic nourishment, and daily immersion with Acharya Sooryanarayan, retreats at Santhivanam transform yoga into an alive, rejuvenating reality.",
         link_santhivanam: "Visit Santhivanam.com ↗",
         link_kayakalpa: "Visit Kayakalpayogam.com ↗",
-        retreat_photo_title: "Santhivanam Ashram Kerala Photo",
-        retreat_photo_desc: "(Reserved space for ashram photos, tropical greenery, and residential retreats)",
         contact_tag: "Begin Your Practice",
-        contact_heading: "Contact & Visit Us",
-        contact_sub: "Located at Via Ponte Tresa 7B in Sorengo, easily reachable from Lugano. Send us a message to book your first trial class.",
-        loc_title: "School Address",
+        contact_heading: "Contact & Book Your Class",
+        contact_sub: "Located at Via Ponte Tresa 7B in Sorengo, just 5 minutes from central Lugano. Reach us directly on WhatsApp or submit the form below.",
+        loc_title: "Studio Address",
         loc_canton: "Canton Ticino, Switzerland",
-        loc_note: "Easily accessible 5 minutes from central Lugano, near the Lugano-Ponte Tresa train (Sorengo station).",
-        phone_title: "Phone & WhatsApp",
+        loc_note: "Conveniently situated 5 minutes from Lugano, near the Lugano-Ponte Tresa train station (Sorengo).",
+        phone_title: "Telephone & WhatsApp",
         phone_label_mob: "WhatsApp / Mobile:",
         phone_label_land: "Landline Phone:",
-        email_title: "Email",
-        form_title: "Request a Trial Class",
-        form_sub: "Fill out the form below to send us a direct message on WhatsApp or book your visit.",
+        email_title: "Email Addresses",
+        form_title: "Information or Booking Inquiry",
+        form_sub: "Send a direct message to Acharya on WhatsApp with your inquiry.",
         form_name: "Full Name *",
         form_phone: "Phone / WhatsApp *",
         form_email: "Email",
-        form_course_select: "Selected Course",
-        opt_course_med: "Gentle Yoga & Meditation",
+        form_course_select: "Discipline or Session of Interest",
+        opt_course1: "Hatha & Maha Kundalini Yoga",
+        opt_course2: "Kayakalpa Yoga (Siddha Science)",
+        opt_course3: "Pranayama & Meditation",
+        opt_session1: "Karma Reading (Past Lives Reading)",
+        opt_session2: "Karmic Healing & Karma Design",
+        opt_session3: "Chakra Detox & Body Cleaning",
         opt_course_retreat: "India Retreats (Santhivanam)",
         form_msg: "Message or Notes",
         form_submit: "Send Request via WhatsApp",
         form_placeholder_name: "Your full name",
         form_placeholder_phone: "+41 ...",
         form_placeholder_email: "name@example.com",
-        form_placeholder_msg: "Write any questions, health notes or preferred times here...",
-        footer_sub: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Switzerland • Teachings by Acharya Sooryanarayan",
+        form_placeholder_msg: "Share any health notes, preferred times or questions...",
+        footer_sub: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano) • Founded in 1996 by Acharya Sooryanarayan",
         footer_rights: "All rights reserved."
       }
     };
