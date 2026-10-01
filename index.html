@@ -87,12 +87,12 @@
         <span data-i18n="top_bar_location">Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Svizzera &bull; Santhivanam Ashram (Kerala, India)</span>
       </div>
       <div class="flex items-center gap-4 text-xs font-medium">
-        <a href="https://wa.me/41794683258" target="_blank" rel="noopener noreferrer" class="hover:text-templeGold-light transition flex items-center gap-1">
-          <span>📞 WhatsApp:</span> <strong>+41 79 468 32 58</strong>
+        <a id="topbar-wa-link" href="https://wa.me/41794683258?text=Buongiorno%20Acharya%20Mohan,%20vorrei%20informazioni%20sulle%20lezioni%20a%20Parvati%20Scuola%20di%20Yoga%20a%20Sorengo." target="_blank" rel="noopener noreferrer" class="hover:text-templeGold-light transition flex items-center gap-1">
+          <span data-i18n="top_bar_wa_label">📞 WhatsApp Studio:</span> <strong>+41 79 468 32 58</strong>
         </a>
         <span class="text-ivory/30">|</span>
         
-        <!-- Language Buttons (Identical to kayakalpayoga) -->
+        <!-- Language Switcher Buttons (Exact Kayakalpayoga Style) -->
         <div class="flex items-center space-x-1 font-medium">
           <button id="lang-btn-it" onclick="setLanguage('it')" class="px-2 py-0.5 rounded text-white bg-alpineForest-light font-bold border border-templeGold/50 transition">IT</button>
           <button id="lang-btn-en" onclick="setLanguage('en')" class="px-2 py-0.5 rounded text-ivory/70 hover:text-white transition">EN</button>
@@ -131,7 +131,7 @@
 
       <!-- WhatsApp CTA & Mobile Toggle -->
       <div class="flex items-center space-x-3">
-        <a href="https://wa.me/41794683258?text=Buongiorno%20Acharya%20ji,%20vorrei%20informazioni%20sulle%20lezioni%20a%20Parvati%20Scuola%20di%20Yoga%20a%20Sorengo." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-roseTerracotta hover:bg-roseTerracotta-dark text-white text-xs font-medium tracking-wide uppercase shadow-md transition transform hover:-translate-y-0.5">
+        <a id="header-cta-link" href="https://wa.me/41794683258?text=Buongiorno%20Acharya%20Mohan,%20vorrei%20informazioni%20sulle%20lezioni%20a%20Parvati%20Scuola%20di%20Yoga%20a%20Sorengo." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-roseTerracotta hover:bg-roseTerracotta-dark text-white text-xs font-medium tracking-wide uppercase shadow-md transition transform hover:-translate-y-0.5">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
           <span data-i18n="cta_whatsapp">Richiedi Info</span>
         </a>
@@ -193,7 +193,7 @@
           <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_teacher">Guida Spirituale & Maestro</div>
         </div>
         <div>
-          <div class="font-display text-xl sm:text-2xl font-bold text-templeGold">Hatha & Kayakalpa</div>
+          <div class="font-display text-xl sm:text-2xl font-bold text-templeGold">Hatha &amp; Kayakalpa</div>
           <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_tradition">Lineaggio Autentico dei Siddha</div>
         </div>
         <div>
@@ -295,8 +295,8 @@
           </div>
 
           <div class="mt-8 pt-6 border-t border-parvatiSand/60 flex flex-wrap items-center justify-between gap-4 text-xs text-mutedSlate">
-            <div>📍 <strong>Sede:</strong> Via Ponte Tresa 7B, Sorengo (Lugano)</div>
-            <div>🇮🇳 <strong>Ashram:</strong> Santhivanam, Kanakamala (Kerala)</div>
+            <div>📍 <strong data-i18n="teacher_card_addr_label">Sede:</strong> Via Ponte Tresa 7B, Sorengo (Lugano)</div>
+            <div>🇮🇳 <strong data-i18n="teacher_card_ashram_label">Ashram:</strong> Santhivanam, Kanakamala (Kerala)</div>
           </div>
         </div>
 
@@ -418,10 +418,10 @@
 
           <div class="flex flex-wrap gap-4">
             <a href="https://santhivanam.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-templeGold hover:bg-templeGold-dark text-alpineForest-deep font-semibold text-xs uppercase tracking-wider transition">
-              Visita Santhivanam.com ↗
+              <span data-i18n="link_santhivanam">Visita Santhivanam.com ↗</span>
             </a>
             <a href="https://kayakalpayogam.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full border border-ivory/30 hover:border-templeGold text-ivory text-xs uppercase tracking-wider transition">
-              Kayakalpayogam.com ↗
+              <span data-i18n="link_kayakalpa">Visita Kayakalpayogam.com ↗</span>
             </a>
           </div>
         </div>
@@ -466,7 +466,7 @@
               <strong>Parvati Scuola di Yoga</strong><br />
               <span class="text-roseTerracotta font-semibold">Via Ponte Tresa 7B</span><br />
               6924 Sorengo (Lugano)<br />
-              Canton Ticino, Svizzera
+              <span data-i18n="loc_canton">Canton Ticino, Svizzera</span>
             </p>
             <p class="text-xs text-mutedSlate mt-3 pt-3 border-t border-parvatiSand/50" data-i18n="loc_note">
               Facilmente accessibile a 5 minuti dal centro di Lugano, vicino alla ferrovia Lugano-Ponte Tresa (stazione Sorengo).
@@ -478,8 +478,8 @@
               <span>📞</span> <span data-i18n="phone_title">Telefono & WhatsApp</span>
             </h3>
             <p class="text-sm text-mutedSlate leading-relaxed">
-              WhatsApp / Mobile: <a href="https://wa.me/41794683258" class="text-roseTerracotta font-semibold hover:underline">+41 79 468 32 58</a><br />
-              Telefono Fisso: <a href="tel:+41919945068" class="text-alpineForest hover:underline">+41 91 994 50 68</a>
+              <span data-i18n="phone_label_mob">WhatsApp / Mobile:</span> <a href="https://wa.me/41794683258" class="text-roseTerracotta font-semibold hover:underline">+41 79 468 32 58</a><br />
+              <span data-i18n="phone_label_land">Telefono Fisso:</span> <a href="tel:+41919945068" class="text-alpineForest hover:underline">+41 91 994 50 68</a>
             </p>
           </div>
 
@@ -506,33 +506,33 @@
           <form onsubmit="handleFormSubmit(event)" class="space-y-4">
             <div>
               <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_name">Nome e Cognome *</label>
-              <input type="text" id="formName" required class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" placeholder="Il tuo nome" />
+              <input type="text" id="formName" required class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" data-i18n-placeholder="form_placeholder_name" placeholder="Il tuo nome" />
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_phone">Telefono / WhatsApp *</label>
-                <input type="tel" id="formPhone" required class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" placeholder="+41 ..." />
+                <input type="tel" id="formPhone" required class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" data-i18n-placeholder="form_placeholder_phone" placeholder="+41 ..." />
               </div>
               <div>
                 <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_email">Email</label>
-                <input type="email" id="formEmail" class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" placeholder="nome@esempio.com" />
+                <input type="email" id="formEmail" class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" data-i18n-placeholder="form_placeholder_email" placeholder="nome@esempio.com" />
               </div>
             </div>
 
             <div>
               <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_course_select">Corso di Interesse</label>
               <select id="formCourse" class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm">
-                <option value="Hatha Yoga Tradizionale">Hatha Yoga Tradizionale</option>
-                <option value="Kayakalpa Yoga">Kayakalpa Yoga & Rigenerazione</option>
-                <option value="Yoga Dolce & Meditazione">Yoga Dolce & Meditazione</option>
-                <option value="Ritiri in India (Santhivanam)">Ritiri in India (Santhivanam)</option>
+                <option value="Hatha Yoga Tradizionale" data-i18n="course1_title">Hatha Yoga Tradizionale</option>
+                <option value="Kayakalpa Yoga" data-i18n="course2_title">Kayakalpa Yoga</option>
+                <option value="Yoga Dolce & Meditazione" data-i18n="opt_course_med">Yoga Dolce & Meditazione</option>
+                <option value="Ritiri in India (Santhivanam)" data-i18n="opt_course_retreat">Ritiri in India (Santhivanam)</option>
               </select>
             </div>
 
             <div>
               <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_msg">Messaggio o Note</label>
-              <textarea id="formMessage" rows="3" class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" placeholder="Scrivi qui eventuali esigenze o richieste..."></textarea>
+              <textarea id="formMessage" rows="3" class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" data-i18n-placeholder="form_placeholder_msg" placeholder="Scrivi qui eventuali esigenze o richieste..."></textarea>
             </div>
 
             <button type="submit" class="w-full py-4 rounded-xl bg-roseTerracotta hover:bg-roseTerracotta-dark text-white font-medium text-sm tracking-wider uppercase transition shadow-md">
@@ -562,38 +562,42 @@
       </div>
 
       <div class="text-ivory/50 text-[11px]">
-        &copy; <span id="year">2026</span> Yogaparvaty.com &bull; Tutti i diritti riservati.
+        &copy; <span id="year">2026</span> Yogaparvaty.com &bull; <span data-i18n="footer_rights">Tutti i diritti riservati.</span>
       </div>
     </div>
   </footer>
 
-  <!-- ==================== SCRIPT (i18n & Mobile Menu & WhatsApp Submit) ==================== -->
+  <!-- ==================== SCRIPT (100% AIRTIGHT i18n & WHATSAPP) ==================== -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Mobile menu toggle
     function toggleMobileMenu() {
       const menu = document.getElementById('mobileMenu');
       menu.classList.toggle('hidden');
     }
 
-    // Interactive WhatsApp message launcher
     function handleFormSubmit(e) {
       e.preventDefault();
       const name = document.getElementById('formName').value;
       const phone = document.getElementById('formPhone').value;
-      const email = document.getElementById('formEmail').value || 'Non specificata';
+      const email = document.getElementById('formEmail').value || (currentLang === 'it' ? 'Non specificata' : 'Not specified');
       const course = document.getElementById('formCourse').value;
-      const msg = document.getElementById('formMessage').value || 'Nessuna nota aggiuntiva';
+      const msg = document.getElementById('formMessage').value || (currentLang === 'it' ? 'Nessuna nota aggiuntiva' : 'No additional notes');
 
-      const text = `Buongiorno Acharya Mohan,%0A%0A*Richiesta da Yogaparvaty.com:*%0A*Nome:* ${encodeURIComponent(name)}%0A*Telefono:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Corso:* ${encodeURIComponent(course)}%0A*Messaggio:* ${encodeURIComponent(msg)}`;
-      window.open(`https://wa.me/41794683258?text=${text}`, '_blank');
+      const greeting = currentLang === 'it' 
+        ? `Buongiorno Acharya Mohan,%0A%0A*Richiesta da Yogaparvaty.com:*%0A*Nome:* ${encodeURIComponent(name)}%0A*Telefono:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Corso:* ${encodeURIComponent(course)}%0A*Messaggio:* ${encodeURIComponent(msg)}`
+        : `Hello Acharya Mohan,%0A%0A*Inquiry from Yogaparvaty.com:*%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Course:* ${encodeURIComponent(course)}%0A*Message:* ${encodeURIComponent(msg)}`;
+      
+      window.open(`https://wa.me/41794683258?text=${greeting}`, '_blank');
     }
 
-    // Bilingual Italian / English dictionary (Clean, Acharya Mohan focus only)
+    // 100% Complete Bilingual Dictionary
     const translations = {
       it: {
+        doc_title: "Parvati Scuola di Yoga | Sorengo - Lugano & Santhivanam India",
+        meta_desc: "Autentica scuola di Hatha Yoga, Kayakalpa Yoga e Meditazione a Sorengo-Lugano (Svizzera) guidata dall'Acharya Mohan. Sede in Via Ponte Tresa 7B, Sorengo. Ritiri residenziali in Kerala presso Santhivanam Ashram.",
         top_bar_location: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Svizzera • Santhivanam Ashram (Kerala, India)",
+        top_bar_wa_label: "📞 WhatsApp Studio:",
         cta_whatsapp: "Richiedi Info",
         brand_subtitle: "Scuola di Yoga • Sorengo - Lugano",
         nav_school: "La Scuola",
@@ -612,7 +616,7 @@
         badge_retreats: "Ritiri Residenziali in Kerala",
         about_tag: "Spazio di Presenza e Serenità",
         about_heading: "Benvenuti a Parvati Scuola di Yoga",
-        about_p1: "Prendendo il nome dalla Dea Parvati — simbolo universale di devozione, grazia e forza armoniosa — la nostra scuola ha sede in Via Ponte Tresa 7B a Sorengo, a pochissimi minuti dal centro di Lugano.",
+        about_p1: "Prendendo il nome dalla Dea Parvati — simbolo universale di devozione, grazia e forza armoniosa — la nostra scuola ha sede in <strong>Via Ponte Tresa 7B a Sorengo</strong>, a pochissimi minuti dal centro di Lugano.",
         about_p2: "Non pratichiamo yoga commerciale né ginnastica affrettata. Guidiamo ogni allievo attraverso la respirazione consapevole (Pranayama), le posture stabili (Asana) e la calma interiore, rispettando il ritmo individuale di ciascun corpo sotto la guida diretta dell'Acharya Mohan.",
         about_feat1_title: "Pratica Graduale",
         about_feat1_desc: "Adatta sia a principianti che a praticanti esperti.",
@@ -629,6 +633,8 @@
         acharya_subtitle: "Guida Spirituale • Maestro di Kayakalpa & Maha Kundalini Yoga",
         acharya_bio_1: "Quale autentica autorità nel metodo Kayakalpa e nel Maha Kundalini Yoga, l'Acharya non insegna teorie astratte: trasmette una disciplina esatta che agisce direttamente sulle cellule del corpo biologico, rigenerando la vitalità e risvegliando i centri sottili.",
         acharya_bio_2: "Guida da molti anni Parvati Scuola di Yoga a Sorengo (Lugano), alternando le lezioni continuative e le iniziazioni in Ticino con i ritiri residenziali all'Ashram Santhivanam in Kerala (India).",
+        teacher_card_addr_label: "Sede:",
+        teacher_card_ashram_label: "Ashram:",
         courses_tag: "I Nostri Corsi",
         courses_heading: "Lezioni a Sorengo - Lugano",
         courses_sub: "Dalle basi dell'Hatha Yoga alle pratiche avanzate di ringiovanimento cellulare guidate dall'Acharya Mohan.",
@@ -653,14 +659,19 @@
         retreat_heading: "Ritiri Residenziali a Santhivanam Ashram (Kerala, India)",
         retreat_p1: "Gli allievi di Parvati Scuola di Yoga hanno l'opportunità unica di immergersi nella pratica residenziale presso il nostro ashram in India: Santhivanam Yoga Ashram a Kanakamala, Kerala.",
         retreat_p2: "Tra colline tropicali incontaminate, cibo ayurvedico puro e sadhana quotidiana con l'Acharya Mohan, l'esperienza a Santhivanam trasforma la comprensione dello yoga in un'esperienza vivente e rigenerativa.",
+        link_santhivanam: "Visita Santhivanam.com ↗",
+        link_kayakalpa: "Visita Kayakalpayogam.com ↗",
         retreat_photo_title: "Foto Santhivanam Ashram Kerala",
         retreat_photo_desc: "(Spazio riservato per le immagini dell'ashram, della natura tropicale e dei ritiri residenziali)",
         contact_tag: "Inizia il Tuo Percorso",
         contact_heading: "Contattaci & Vieni a Trovarci",
         contact_sub: "La scuola è situata a Sorengo in Via Ponte Tresa 7B, comodamente raggiungibile da Lugano. Scrivici per informazioni o per prenotare una lezione di prova.",
         loc_title: "Indirizzo della Scuola",
+        loc_canton: "Canton Ticino, Svizzera",
         loc_note: "Facilmente accessibile a 5 minuti dal centro di Lugano, vicino alla ferrovia Lugano-Ponte Tresa (stazione Sorengo).",
         phone_title: "Telefono & WhatsApp",
+        phone_label_mob: "WhatsApp / Mobile:",
+        phone_label_land: "Telefono Fisso:",
         email_title: "Email",
         form_title: "Richiesta Lezione di Prova",
         form_sub: "Compila il modulo per inviarci un messaggio diretto su WhatsApp o prenotare una prova.",
@@ -668,12 +679,22 @@
         form_phone: "Telefono / WhatsApp *",
         form_email: "Email",
         form_course_select: "Corso di Interesse",
+        opt_course_med: "Yoga Dolce & Meditazione",
+        opt_course_retreat: "Ritiri in India (Santhivanam)",
         form_msg: "Messaggio o Note",
         form_submit: "Invia Richiesta via WhatsApp",
-        footer_sub: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Svizzera • Insegnamenti di Acharya Mohan"
+        form_placeholder_name: "Il tuo nome",
+        form_placeholder_phone: "+41 ...",
+        form_placeholder_email: "nome@esempio.com",
+        form_placeholder_msg: "Scrivi qui eventuali esigenze o richieste...",
+        footer_sub: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Svizzera • Insegnamenti di Acharya Mohan",
+        footer_rights: "Tutti i diritti riservati."
       },
       en: {
+        doc_title: "Parvati Yoga School | Sorengo - Lugano & Santhivanam India",
+        meta_desc: "Authentic school of Hatha Yoga, Kayakalpa Yoga, and Meditation in Sorengo-Lugano (Switzerland) guided by Acharya Mohan. Located at Via Ponte Tresa 7B, Sorengo. Residential retreats in Kerala at Santhivanam Ashram.",
         top_bar_location: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Switzerland • Santhivanam Ashram (Kerala, India)",
+        top_bar_wa_label: "📞 WhatsApp Studio:",
         cta_whatsapp: "Request Info",
         brand_subtitle: "Yoga School • Sorengo - Lugano",
         nav_school: "The School",
@@ -692,8 +713,8 @@
         badge_retreats: "Kerala Residential Retreats",
         about_tag: "Presence & Serenity",
         about_heading: "Welcome to Parvati Yoga School",
-        about_p1: "Named after Mother Goddess Parvati — the universal symbol of devotion, grace, and harmonious strength — our school is located at Via Ponte Tresa 7B in Sorengo, just minutes from central Lugano.",
-        about_p2: "We do not practice commercial fitness yoga. We guide each student through conscious breathing (Pranayama), steady postures (Asana), and profound inner stillness, honoring each body's natural pace under Acharya Mohan's guidance.",
+        about_p1: "Named after Mother Goddess Parvati — the universal symbol of devotion, grace, and harmonious strength — our school is located at <strong>Via Ponte Tresa 7B in Sorengo</strong>, just minutes from central Lugano.",
+        about_p2: "We do not practice commercial fitness yoga. We guide each student through conscious breathing (Pranayama), steady postures (Asana), and profound inner stillness, honoring each body's natural pace under Acharya Mohan's direct guidance.",
         about_feat1_title: "Gradual Practice",
         about_feat1_desc: "Accessible and nourishing for both beginners and experienced yogis.",
         about_feat2_title: "Small Groups",
@@ -709,6 +730,8 @@
         acharya_subtitle: "Spiritual Guide • Master of Kayakalpa & Maha Kundalini Yoga",
         acharya_bio_1: "A living authority on Kayakalpa and Maha Kundalini Yoga, Acharya does not teach vague theories: he transmits an exact physiological science acting directly upon biological cells to restore vitality and open subtle channels.",
         acharya_bio_2: "He has guided Parvati Yoga School in Sorengo (Lugano) for many years, alternating ongoing teachings in Switzerland with residential retreats at Santhivanam Ashram in Kerala (India).",
+        teacher_card_addr_label: "Studio:",
+        teacher_card_ashram_label: "Ashram:",
         courses_tag: "Our Programs",
         courses_heading: "Classes in Sorengo - Lugano",
         courses_sub: "From foundational Hatha Yoga to advanced cellular rejuvenation sadhana led by Acharya Mohan.",
@@ -733,14 +756,19 @@
         retreat_heading: "Residential Retreats at Santhivanam Ashram (Kerala, India)",
         retreat_p1: "Students of Parvati Yoga School enjoy the rare opportunity to immerse themselves in residential sadhana at our sister ashram in India: Santhivanam Yoga Ashram in Kanakamala, Kerala.",
         retreat_p2: "Surrounded by pristine tropical hills, nourishing Ayurvedic meals, and daily sadhana under Acharya Mohan's guidance, Santhivanam grounds yoga as a living, restorative reality.",
+        link_santhivanam: "Visit Santhivanam.com ↗",
+        link_kayakalpa: "Visit Kayakalpayogam.com ↗",
         retreat_photo_title: "Santhivanam Ashram Kerala Photo",
         retreat_photo_desc: "(Reserved space for ashram photos, tropical greenery, and residential retreats)",
         contact_tag: "Begin Your Practice",
         contact_heading: "Contact & Visit Us",
         contact_sub: "Located at Via Ponte Tresa 7B in Sorengo, easily reachable from Lugano. Send us a message to book your first trial class.",
         loc_title: "School Address",
+        loc_canton: "Canton Ticino, Switzerland",
         loc_note: "Easily accessible 5 minutes from central Lugano, near the Lugano-Ponte Tresa train (Sorengo station).",
         phone_title: "Phone & WhatsApp",
+        phone_label_mob: "WhatsApp / Mobile:",
+        phone_label_land: "Landline Phone:",
         email_title: "Email",
         form_title: "Request a Trial Class",
         form_sub: "Fill out the form below to send us a direct message on WhatsApp or book your visit.",
@@ -748,9 +776,16 @@
         form_phone: "Phone / WhatsApp *",
         form_email: "Email",
         form_course_select: "Selected Course",
+        opt_course_med: "Gentle Yoga & Meditation",
+        opt_course_retreat: "India Retreats (Santhivanam)",
         form_msg: "Message or Notes",
         form_submit: "Send Request via WhatsApp",
-        footer_sub: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Switzerland • Teachings by Acharya Mohan"
+        form_placeholder_name: "Your full name",
+        form_placeholder_phone: "+41 ...",
+        form_placeholder_email: "name@example.com",
+        form_placeholder_msg: "Write any questions, health notes or preferred times here...",
+        footer_sub: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano), Switzerland • Teachings by Acharya Mohan",
+        footer_rights: "All rights reserved."
       }
     };
 
@@ -762,7 +797,27 @@
       localStorage.setItem('yogaparvaty_lang', lang);
       document.documentElement.lang = lang;
 
-      // Update button visual state matching kayakalpayoga style
+      // Update Page Title and Meta Description
+      if (translations[lang].doc_title) {
+        document.title = translations[lang].doc_title;
+      }
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc && translations[lang].meta_desc) {
+        metaDesc.content = translations[lang].meta_desc;
+      }
+
+      // Update topbar WhatsApp prefilled link
+      const waText = lang === 'it'
+        ? "Buongiorno Acharya Mohan, vorrei informazioni sulle lezioni a Parvati Scuola di Yoga a Sorengo."
+        : "Hello Acharya Mohan, I would like information regarding yoga classes at Parvati Yoga School in Sorengo.";
+      const waUrl = `https://wa.me/41794683258?text=${encodeURIComponent(waText)}`;
+      
+      const topbarWa = document.getElementById('topbar-wa-link');
+      if (topbarWa) topbarWa.href = waUrl;
+      const headerCta = document.getElementById('header-cta-link');
+      if (headerCta) headerCta.href = waUrl;
+
+      // Button styles matching kayakalpayoga exactly
       const btnIt = document.getElementById('lang-btn-it');
       const btnEn = document.getElementById('lang-btn-en');
       if (btnIt && btnEn) {
@@ -775,10 +830,19 @@
         }
       }
 
+      // Update innerHTML for all data-i18n elements
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang][key]) {
-          el.textContent = translations[lang][key];
+          el.innerHTML = translations[lang][key];
+        }
+      });
+
+      // Update placeholders
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang][key]) {
+          el.placeholder = translations[lang][key];
         }
       });
     }
