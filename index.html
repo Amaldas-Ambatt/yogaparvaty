@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parvati Scuola di Yoga | Sorengo - Lugano & Santhivanam India</title>
+  <meta name="description" content="Autentica scuola di Hatha Yoga, Kayakalpa Yoga e Meditazione a Sorengo-Lugano (Svizzera) guidata dall'Acharya Mohan e Yogini Daniela. Ritiri residenziali in Kerala presso Santhivanam Ashram." />
+  <meta name="keywords" content="Parvati Scuola di Yoga, Yoga Lugano, Yoga Sorengo, Acharya Mohan, Yogini Daniela, Hatha Yoga Ticino, Kayakalpa Yoga, Santhivanam Ashram, Ritiri Yoga India Svizzera" />
+
+  <!-- Canonical & Social Sharing Meta Tags -->
+  <link rel="canonical" href="https://yogaparvaty.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yogaparvaty.com" />
+  <meta property="og:title" content="Parvati Scuola di Yoga | Sorengo - Lugano & Santhivanam" />
+  <meta property="og:description" content="Autentica tradizione yogica a Sorengo-Lugano con l'Acharya Mohan e Yogini Daniela. Hatha Yoga, Kayakalpa e ritiri in Kerala." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF8F5',
+            ivoryLight: '#FFFFFF',
+            ivoryDark: '#F3EFE6',
+            parvatiSand: '#E8E2D5',
+            roseTerracotta: {
+              DEFAULT: '#C86D51',
+              light: '#E08569',
+              dark: '#A6533A',
+              subtle: '#F7EDE8'
+            },
+            alpineForest: {
+              DEFAULT: '#243B33',
+              light: '#335247',
+              dark: '#162620',
+              deep: '#0F1A16'
+            },
+            lotusRose: {
+              DEFAULT: '#B35D72',
+              light: '#D47E94',
+              dark: '#8E3F52'
+            },
+            templeGold: {
+              DEFAULT: '#D4A359',
+              light: '#EBC387',
+              dark: '#B08139',
+              subtle: '#FDF7EE'
+            },
+            charcoal: '#1A202C',
+            mutedSlate: '#64748B'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            display: ['"Cinzel"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-nav {
+      background: rgba(250, 248, 245, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+    .image-placeholder {
+      background: linear-gradient(135deg, #f3efe6 0%, #e8e2d5 100%);
+      border: 2px dashed #d4a359;
+    }
+  </style>
+</head>
+
+<body class="bg-ivory text-charcoal font-sans antialiased selection:bg-roseTerracotta-light selection:text-white">
+
+  <!-- ==================== TOP BANNER ==================== -->
+  <div class="bg-alpineForest text-ivory/90 text-xs py-2 px-4 border-b border-templeGold/20">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-templeGold animate-pulse"></span>
+        <span data-i18n="top_bar_location">Sorengo - Lugano (Svizzera) & Santhivanam Ashram (Kerala, India)</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] tracking-wider uppercase font-medium">
+        <a href="tel:+41794683258" class="hover:text-templeGold-light transition">📞 +41 79 468 32 58</a>
+        <span class="text-ivory/30">•</span>
+        <a href="mailto:info@yogaparvaty.com" class="hover:text-templeGold-light transition">✉️ info@yogaparvaty.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-parvatiSand/60 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex flex-col">
+        <span class="font-display text-xl sm:text-2xl font-bold tracking-widest text-alpineForest uppercase">
+          PARVATI
+        </span>
+        <span class="font-serif italic text-xs tracking-wider text-roseTerracotta">
+          Scuola di Yoga • Lugano
+        </span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-alpineForest">
+        <a href="#scuola" class="hover:text-roseTerracotta transition" data-i18n="nav_school">La Scuola</a>
+        <a href="#maestri" class="hover:text-roseTerracotta transition" data-i18n="nav_teachers">I Maestri</a>
+        <a href="#corsi" class="hover:text-roseTerracotta transition" data-i18n="nav_courses">Corsi & Orari</a>
+        <a href="#ritiri" class="hover:text-roseTerracotta transition" data-i18n="nav_retreats">Ritiri Kerala</a>
+        <a href="#contatti" class="hover:text-roseTerracotta transition" data-i18n="nav_contact">Contatti</a>
+      </nav>
+
+      <!-- Language Switcher & WhatsApp CTA -->
+      <div class="flex items-center space-x-3">
+        <!-- Language Switcher Button -->
+        <button id="langToggleBtn" onclick="toggleLanguage()" class="px-2.5 py-1 text-xs font-semibold rounded-full border border-parvatiSand bg-white text-alpineForest hover:border-templeGold transition flex items-center gap-1 shadow-sm">
+          <span id="currentLangLabel">🇮🇹 IT</span>
+        </button>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/41794683258?text=Buongiorno,%20vorrei%20informazioni%20sulle%20lezioni%20a%20Parvati%20Scuola%20di%20Yoga." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-roseTerracotta hover:bg-roseTerracotta-dark text-white text-xs font-medium tracking-wide uppercase shadow-md transition transform hover:-translate-y-0.5">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <span data-i18n="cta_whatsapp">Scrivici</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg text-alpineForest hover:bg-parvatiSand/40 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-ivory border-b border-parvatiSand px-4 pt-2 pb-6 space-y-3">
+      <a href="#scuola" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta border-b border-parvatiSand/40" data-i18n="nav_school">La Scuola</a>
+      <a href="#maestri" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta border-b border-parvatiSand/40" data-i18n="nav_teachers">I Maestri</a>
+      <a href="#corsi" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta border-b border-parvatiSand/40" data-i18n="nav_courses">Corsi & Orari</a>
+      <a href="#ritiri" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta border-b border-parvatiSand/40" data-i18n="nav_retreats">Ritiri Kerala</a>
+      <a href="#contatti" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-alpineForest hover:text-roseTerracotta" data-i18n="nav_contact">Contatti</a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="relative bg-alpineForest text-ivory overflow-hidden py-24 sm:py-32">
+    <!-- Atmospheric Ambient Gradient -->
+    <div class="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_top_right,#c86d51_0%,transparent_60%)]"></div>
+    <div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_bottom_left,#d4a359_0%,transparent_60%)]"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-templeGold/30 bg-alpineForest-light/70 text-templeGold-light text-xs font-semibold tracking-widest uppercase mb-6 shadow-sm">
+        <span class="w-1.5 h-1.5 rounded-full bg-templeGold"></span>
+        <span data-i18n="hero_badge">Sorengo - Lugano • Svizzera</span>
+      </div>
+
+      <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-light tracking-wide text-ivory mb-6 text-balance">
+        <span class="font-display font-semibold block text-templeGold-light">PARVATI</span>
+        <span data-i18n="hero_title_sub">L'Autentica Tradizione Yogica</span>
+      </h1>
+
+      <p class="max-w-2xl mx-auto font-sans text-base sm:text-lg text-ivory/80 leading-relaxed mb-10 text-balance" data-i18n="hero_description">
+        Una scuola solida e accogliente a Sorengo-Lugano, attiva da molti anni. Condotta con dedizione da Acharya Mohan e Yogini Daniela per coltivare equilibrio vitale, rigenerazione e calma mentale profonda.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#contatti" class="w-full sm:w-auto px-8 py-4 rounded-full bg-roseTerracotta hover:bg-roseTerracotta-dark text-white font-medium text-sm tracking-wider uppercase transition shadow-lg hover:shadow-roseTerracotta/30" data-i18n="hero_btn_trial">
+          Prenota una Lezione di Prova
+        </a>
+        <a href="#corsi" class="w-full sm:w-auto px-8 py-4 rounded-full border border-ivory/30 hover:border-templeGold hover:text-templeGold-light text-ivory text-sm font-medium tracking-wider uppercase transition" data-i18n="hero_btn_courses">
+          Scopri i Corsi
+        </a>
+      </div>
+
+      <!-- Quick Trust Badges -->
+      <div class="mt-16 pt-10 border-t border-ivory/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="font-display text-2xl font-bold text-templeGold">Lugano</div>
+          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_loc">Studio a Sorengo</div>
+        </div>
+        <div>
+          <div class="font-display text-2xl font-bold text-templeGold">Hatha & Kayakalpa</div>
+          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_tradition">Lineaggio Autentico</div>
+        </div>
+        <div>
+          <div class="font-display text-2xl font-bold text-templeGold">Milano & Rishikesh</div>
+          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_diploma">Formazione Certificata</div>
+        </div>
+        <div>
+          <div class="font-display text-2xl font-bold text-templeGold">Santhivanam</div>
+          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_retreats">Ritiri in Kerala</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section id="scuola" class="py-20 lg:py-28 bg-ivoryDark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <div>
+          <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="about_tag">Spazio di Presenza e Serenità</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-alpineForest mt-2 mb-6" data-i18n="about_heading">
+            Benvenuti a Parvati Scuola di Yoga
+          </h2>
+          <p class="text-mutedSlate leading-relaxed mb-4" data-i18n="about_p1">
+            Prendendo il nome dalla Dea Parvati — simbolo universale di devozione, grazia e forza armoniosa — la nostra scuola a Sorengo è un rifugio di pace a pochi minuti dal centro di Lugano.
+          </p>
+          <p class="text-mutedSlate leading-relaxed mb-6" data-i18n="about_p2">
+            Non pratichiamo yoga commerciale né ginnastica affrettata. Guidiamo ogni allievo attraverso la respirazione consapevole (Pranayama), le posture stabili (Asana) e la calma interiore, rispettando il ritmo individuale di ciascun corpo.
+          </p>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+            <div class="p-4 rounded-xl bg-ivory border border-parvatiSand">
+              <div class="font-serif font-bold text-alpineForest text-lg" data-i18n="about_feat1_title">Pratica Graduale</div>
+              <p class="text-xs text-mutedSlate mt-1" data-i18n="about_feat1_desc">Adatta sia a principianti che a praticanti esperti.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-ivory border border-parvatiSand">
+              <div class="font-serif font-bold text-alpineForest text-lg" data-i18n="about_feat2_title">Gruppi a Numero Chiuso</div>
+              <p class="text-xs text-mutedSlate mt-1" data-i18n="about_feat2_desc">Attenzione personalizzata e cura per ogni praticante.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real Image Placeholder Area -->
+        <div class="relative">
+          <div class="rounded-2xl p-8 sm:p-12 image-placeholder text-center flex flex-col items-center justify-center min-h-[380px] shadow-sm">
+            <div class="w-16 h-16 rounded-full bg-templeGold/20 flex items-center justify-center text-templeGold text-2xl mb-4">
+              📷
+            </div>
+            <h3 class="font-serif text-xl font-bold text-alpineForest mb-2" data-i18n="photo_slot_studio_title">
+              Foto dello Studio a Sorengo
+            </h3>
+            <p class="text-xs text-mutedSlate max-w-sm" data-i18n="photo_slot_desc">
+              (Spazio riservato per la fotografia ufficiale della sala yoga, pavimento in legno e atmosfera serena)
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TEACHERS SECTION ==================== -->
+  <section id="maestri" class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="teachers_tag">Tradizione Vivente</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-alpineForest mt-2 mb-4" data-i18n="teachers_heading">
+          I Nostri Insegnanti
+        </h2>
+        <p class="text-mutedSlate text-sm sm:text-base" data-i18n="teachers_sub">
+          L'insegnamento è condotto da una guida con decenni di studio e dedizione autentica alla saggezza yogica.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        
+        <!-- Acharya Mohan -->
+        <div class="bg-white rounded-2xl border border-parvatiSand p-6 sm:p-8 shadow-sm flex flex-col justify-between">
+          <div>
+            <!-- Teacher Photo Placeholder -->
+            <div class="w-full h-64 rounded-xl image-placeholder flex flex-col items-center justify-center text-center p-6 mb-6">
+              <span class="text-3xl text-templeGold mb-2">🕉️</span>
+              <span class="font-serif font-bold text-alpineForest text-base" data-i18n="teacher_photo_acharya">Foto Acharya Mohan</span>
+              <span class="text-xs text-mutedSlate mt-1" data-i18n="teacher_photo_slot">(Spazio riservato per il ritratto dell'Acharya)</span>
+            </div>
+
+            <h3 class="font-display text-2xl font-bold text-alpineForest">Acharya Mohan</h3>
+            <p class="text-roseTerracotta font-serif italic text-sm mb-4" data-i18n="acharya_subtitle">
+              Guida Spirituale • Maestro di Kayakalpa & Maha Kundalini
+            </p>
+            <p class="text-sm text-mutedSlate leading-relaxed" data-i18n="acharya_bio">
+              Autentica autorità nel metodo Kayakalpa e nel Maha Kundalini Yoga. Non propone teorie astratte ma trasmette una disciplina millenaria che rigenera la vitalità cellulare, calma la mente e risveglia le energie profonde dell'essere.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-parvatiSand/60 text-xs text-mutedSlate italic">
+            Parvati Scuola di Yoga (Sorengo) & Santhivanam Ashram (Kerala)
+          </div>
+        </div>
+
+        <!-- Yogini Daniela -->
+        <div class="bg-white rounded-2xl border border-parvatiSand p-6 sm:p-8 shadow-sm flex flex-col justify-between">
+          <div>
+            <!-- Teacher Photo Placeholder -->
+            <div class="w-full h-64 rounded-xl image-placeholder flex flex-col items-center justify-center text-center p-6 mb-6">
+              <span class="text-3xl text-templeGold mb-2">🌸</span>
+              <span class="font-serif font-bold text-alpineForest text-base" data-i18n="teacher_photo_daniela">Foto Yogini Daniela</span>
+              <span class="text-xs text-mutedSlate mt-1" data-i18n="teacher_photo_slot">(Spazio riservato per la foto di Yogini Daniela)</span>
+            </div>
+
+            <h3 class="font-display text-2xl font-bold text-alpineForest">Yogini Daniela</h3>
+            <p class="text-roseTerracotta font-serif italic text-sm mb-4" data-i18n="daniela_subtitle">
+              Insegnante di Hatha Yoga • Diplomata Carlo Patrian Milano
+            </p>
+            <p class="text-sm text-mutedSlate leading-relaxed" data-i18n="daniela_bio">
+              Diplomata presso lo storico Istituto Yoga Carlo Patrian di Milano e perfezionatasi nei centri tradizionali di Rishikesh (India). Guida da molti anni le lezioni a Sorengo con dolcezza, precisione posturale e profonda sensibilità pedagogica.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-parvatiSand/60 text-xs text-mutedSlate italic">
+            Istituto Yoga Carlo Patrian (Milano) • Ashrams di Rishikesh (Himalaya)
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COURSES & SCHEDULE ==================== -->
+  <section id="corsi" class="py-20 lg:py-28 bg-ivoryDark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="courses_tag">I Nostri Corsi</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-alpineForest mt-2 mb-4" data-i18n="courses_heading">
+          Lezioni a Sorengo - Lugano
+        </h2>
+        <p class="text-mutedSlate text-sm sm:text-base" data-i18n="courses_sub">
+          Dalle basi dell'Hatha Yoga alle pratiche avanzate di rigenerazione cellulare.
+        </p>
+      </div>
+
+      <!-- Course Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Course 1 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-parvatiSand shadow-sm hover:border-templeGold transition">
+          <div class="text-roseTerracotta font-display text-lg font-bold mb-2">01</div>
+          <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course1_title">Hatha Yoga Tradizionale</h3>
+          <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed mb-4" data-i18n="course1_desc">
+            Postura (Asana), allineamento dolce, respiro consapevole (Pranayama) e rilassamento finale. Ideale per ritrovare flessibilità, vitalità e serenità.
+          </p>
+          <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-parvatiSand/50 text-alpineForest" data-i18n="level_all">Tutti i livelli</span>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-parvatiSand shadow-sm hover:border-templeGold transition">
+          <div class="text-roseTerracotta font-display text-lg font-bold mb-2">02</div>
+          <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course2_title">Kayakalpa Yoga</h3>
+          <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed mb-4" data-i18n="course2_desc">
+            Antica scienza dei Siddha trasmessa dall'Acharya Mohan per il ringiovanimento cellulare, la tonificazione degli organi interni e la trasmutazione dell'energia vitale.
+          </p>
+          <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-templeGold/20 text-alpineForest" data-i18n="level_special">Metodo Speciale</span>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-parvatiSand shadow-sm hover:border-templeGold transition">
+          <div class="text-roseTerracotta font-display text-lg font-bold mb-2">03</div>
+          <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course3_title">Meditazione & Pranayama</h3>
+          <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed mb-4" data-i18n="course3_desc">
+            Tecniche mirate di controllo del prana e silenzio mentale. Per sciogliere l'ansia, acuire la concentrazione e vivere nella quiete interiore.
+          </p>
+          <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-parvatiSand/50 text-alpineForest" data-i18n="level_all">Tutti i livelli</span>
+        </div>
+
+      </div>
+
+      <!-- Weekly Schedule Box -->
+      <div class="bg-white rounded-2xl border border-parvatiSand p-6 sm:p-8 max-w-4xl mx-auto shadow-sm">
+        <h3 class="font-serif text-2xl font-bold text-alpineForest mb-6 text-center" data-i18n="sched_title">
+          Orari Settimanali Indicativi
+        </h3>
+        
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm">
+            <thead>
+              <tr class="border-b border-parvatiSand text-xs uppercase tracking-wider text-mutedSlate font-semibold">
+                <th class="py-3 px-4" data-i18n="th_day">Giorno</th>
+                <th class="py-3 px-4" data-i18n="th_time">Orario</th>
+                <th class="py-3 px-4" data-i18n="th_course">Corso</th>
+                <th class="py-3 px-4" data-i18n="th_teacher">Insegnante</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-parvatiSand/40">
+              <tr>
+                <td class="py-3 px-4 font-medium text-alpineForest" data-i18n="day_mon">Lunedì</td>
+                <td class="py-3 px-4 text-mutedSlate">18:30 - 20:00</td>
+                <td class="py-3 px-4 font-serif font-bold text-alpineForest" data-i18n="course1_title">Hatha Yoga Tradizionale</td>
+                <td class="py-3 px-4 text-xs text-mutedSlate">Yogini Daniela</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-medium text-alpineForest" data-i18n="day_wed">Mercoledì</td>
+                <td class="py-3 px-4 text-mutedSlate">19:00 - 20:30</td>
+                <td class="py-3 px-4 font-serif font-bold text-alpineForest" data-i18n="course2_title">Kayakalpa Yoga & Pranayama</td>
+                <td class="py-3 px-4 text-xs text-mutedSlate">Acharya Mohan</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-medium text-alpineForest" data-i18n="day_fri">Venerdì</td>
+                <td class="py-3 px-4 text-mutedSlate">09:30 - 11:00</td>
+                <td class="py-3 px-4 font-serif font-bold text-alpineForest" data-i18n="course3_title">Yoga Dolce & Meditazione</td>
+                <td class="py-3 px-4 text-xs text-mutedSlate">Yogini Daniela</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-xs text-center text-mutedSlate mt-6 italic" data-i18n="sched_note">
+          * Gli orari possono variare in base ai periodi dell'anno e ai ritiri in India. Contattaci per confermare il calendario aggiornato.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== RETREATS IN KERALA (SANTHIVANAM BRIDGE) ==================== -->
+  <section id="ritiri" class="py-20 lg:py-28 bg-alpineForest text-ivory relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div>
+          <span class="text-templeGold font-serif italic text-lg" data-i18n="retreat_tag">Il Ponte Spirituale</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-ivory mt-2 mb-6" data-i18n="retreat_heading">
+            Ritiri Residenziali a Santhivanam Ashram (Kerala, India)
+          </h2>
+          <p class="text-ivory/80 leading-relaxed mb-4 text-sm sm:text-base" data-i18n="retreat_p1">
+            Ogni anno, gli allievi di Parvati Scuola di Yoga hanno l'opportunità unica di immergersi nella pratica residenziale presso il nostro ashram gemello in India: <strong>Santhivanam Yoga Ashram</strong> a Kanakamala, Kerala.
+          </p>
+          <p class="text-ivory/80 leading-relaxed mb-6 text-sm sm:text-base" data-i18n="retreat_p2">
+            Tra colline tropicali incontaminate, cibo ayurvedico puro e sadhana quotidiana con l'Acharya, l'esperienza a Santhivanam trasforma la comprensione dello yoga in un'esperienza vivente.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="https://santhivanam.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-templeGold hover:bg-templeGold-dark text-alpineForest-deep font-semibold text-xs uppercase tracking-wider transition">
+              Visita Santhivanam.com ↗
+            </a>
+            <a href="https://kayakalpayogam.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full border border-ivory/30 hover:border-templeGold text-ivory text-xs uppercase tracking-wider transition">
+              Kayakalpayogam.com ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Retreat Photo Placeholder -->
+        <div class="rounded-2xl p-8 sm:p-12 border-2 border-dashed border-templeGold/40 bg-alpineForest-light/50 text-center flex flex-col items-center justify-center min-h-[340px]">
+          <div class="text-3xl text-templeGold mb-3">🌴</div>
+          <h3 class="font-serif text-xl font-bold text-ivory mb-2" data-i18n="retreat_photo_title">
+            Foto Santhivanam Ashram Kerala
+          </h3>
+          <p class="text-xs text-ivory/70 max-w-sm" data-i18n="retreat_photo_desc">
+            (Spazio riservato per le immagini dell'ashram, della natura tropicale e dei ritiri residenziali)
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT & LOCATION ==================== -->
+  <section id="contatti" class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-roseTerracotta font-serif italic text-lg" data-i18n="contact_tag">Inizia il Tuo Percorso</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-alpineForest mt-2 mb-4" data-i18n="contact_heading">
+          Contattaci & Vieni a Trovarci
+        </h2>
+        <p class="text-mutedSlate text-sm sm:text-base" data-i18n="contact_sub">
+          Siamo a Sorengo, a pochi minuti da Lugano. Scrivici o telefonaci per prenotare la tua prima lezione di prova.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        
+        <!-- Contact Details -->
+        <div class="space-y-6">
+          <div class="bg-white rounded-2xl p-6 border border-parvatiSand shadow-sm">
+            <h3 class="font-serif text-xl font-bold text-alpineForest mb-4 flex items-center gap-2">
+              <span>📍</span> <span data-i18n="loc_title">Sede della Scuola</span>
+            </h3>
+            <p class="text-sm text-mutedSlate leading-relaxed">
+              <strong>Parvati Scuola di Yoga</strong><br />
+              Sorengo, 6924 Lugano (Canton Ticino, Svizzera)
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-parvatiSand shadow-sm">
+            <h3 class="font-serif text-xl font-bold text-alpineForest mb-4 flex items-center gap-2">
+              <span>📞</span> <span data-i18n="phone_title">Telefono & WhatsApp</span>
+            </h3>
+            <p class="text-sm text-mutedSlate leading-relaxed">
+              WhatsApp / Mobile: <a href="https://wa.me/41794683258" class="text-roseTerracotta font-semibold hover:underline">+41 79 468 32 58</a><br />
+              Telefono Fisso: <a href="tel:+41919945068" class="text-alpineForest hover:underline">+41 91 994 50 68</a>
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-parvatiSand shadow-sm">
+            <h3 class="font-serif text-xl font-bold text-alpineForest mb-4 flex items-center gap-2">
+              <span>✉️</span> <span data-i18n="email_title">Email</span>
+            </h3>
+            <p class="text-sm text-mutedSlate leading-relaxed">
+              <a href="mailto:info@yogaparvaty.com" class="text-roseTerracotta hover:underline font-medium">info@yogaparvaty.com</a><br />
+              <a href="mailto:kayakalpayogam@gmail.com" class="text-mutedSlate hover:underline text-xs">kayakalpayogam@gmail.com</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive Direct Message Form -->
+        <div class="bg-white rounded-2xl p-8 border border-parvatiSand shadow-sm">
+          <h3 class="font-serif text-2xl font-bold text-alpineForest mb-2" data-i18n="form_title">
+            Richiesta Lezione di Prova
+          </h3>
+          <p class="text-xs text-mutedSlate mb-6" data-i18n="form_sub">
+            Compila il modulo per inviarci un messaggio diretto o prenotare una prova.
+          </p>
+
+          <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_name">Nome e Cognome *</label>
+              <input type="text" id="formName" required class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" placeholder="Il tuo nome" />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_phone">Telefono / WhatsApp *</label>
+                <input type="tel" id="formPhone" required class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" placeholder="+41 ..." />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_email">Email</label>
+                <input type="email" id="formEmail" class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" placeholder="nome@esempio.com" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_course_select">Corso di Interesse</label>
+              <select id="formCourse" class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm">
+                <option value="Hatha Yoga Tradizionale">Hatha Yoga Tradizionale</option>
+                <option value="Kayakalpa Yoga">Kayakalpa Yoga & Rigenerazione</option>
+                <option value="Yoga Dolce & Meditazione">Yoga Dolce & Meditazione</option>
+                <option value="Ritiri in India (Santhivanam)">Ritiri in India (Santhivanam)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-alpineForest uppercase tracking-wider mb-1" data-i18n="form_msg">Messaggio o Note</label>
+              <textarea id="formMessage" rows="3" class="w-full px-4 py-3 rounded-xl border border-parvatiSand bg-ivory focus:bg-white focus:outline-none focus:ring-2 focus:ring-roseTerracotta text-sm" placeholder="Raccontaci la tua esperienza o eventuali esigenze particolari..."></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-xl bg-roseTerracotta hover:bg-roseTerracotta-dark text-white font-medium text-sm tracking-wider uppercase transition shadow-md">
+              <span data-i18n="form_submit">Invia Richiesta via WhatsApp</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-alpineForest-deep text-ivory/80 py-12 border-t border-parvatiSand/20 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+      <div>
+        <div class="font-display font-bold text-lg text-ivory tracking-widest uppercase">PARVATI SCUOLA DI YOGA</div>
+        <p class="text-ivory/60 mt-1" data-i18n="footer_sub">Sorengo - Lugano (Svizzera) • Insegnamenti di Acharya Mohan & Yogini Daniela</p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-6 text-ivory/60 text-xs">
+        <a href="#scuola" class="hover:text-templeGold transition" data-i18n="nav_school">La Scuola</a>
+        <a href="#maestri" class="hover:text-templeGold transition" data-i18n="nav_teachers">I Maestri</a>
+        <a href="#corsi" class="hover:text-templeGold transition" data-i18n="nav_courses">Corsi</a>
+        <a href="#ritiri" class="hover:text-templeGold transition" data-i18n="nav_retreats">Ritiri Kerala</a>
+        <a href="#contatti" class="hover:text-templeGold transition" data-i18n="nav_contact">Contatti</a>
+      </div>
+
+      <div class="text-ivory/50 text-[11px]">
+        &copy; <span id="year">2026</span> Yogaparvaty.com • Tutti i diritti riservati.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPT (i18n & Mobile Menu & WhatsApp Submit) ==================== -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Interactive WhatsApp message launcher
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('formName').value;
+      const phone = document.getElementById('formPhone').value;
+      const email = document.getElementById('formEmail').value || 'Non specificata';
+      const course = document.getElementById('formCourse').value;
+      const msg = document.getElementById('formMessage').value || 'Nessuna nota aggiuntiva';
+
+      const text = `Buongiorno Parvati Scuola di Yoga,%0A%0A*Nome:* ${encodeURIComponent(name)}%0A*Telefono:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Corso:* ${encodeURIComponent(course)}%0A*Messaggio:* ${encodeURIComponent(msg)}`;
+      window.open(`https://wa.me/41794683258?text=${text}`, '_blank');
+    }
+
+    // Bilingual Italian / English dictionary
+    const translations = {
+      it: {
+        lang_btn: "🇮🇹 IT",
+        top_bar_location: "Sorengo - Lugano (Svizzera) & Santhivanam Ashram (Kerala, India)",
+        cta_whatsapp: "Scrivici",
+        nav_school: "La Scuola",
+        nav_teachers: "I Maestri",
+        nav_courses: "Corsi & Orari",
+        nav_retreats: "Ritiri Kerala",
+        nav_contact: "Contatti",
+        hero_badge: "Sorengo - Lugano • Svizzera",
+        hero_title_sub: "L'Autentica Tradizione Yogica",
+        hero_description: "Una scuola solida e accogliente a Sorengo-Lugano, attiva da molti anni. Condotta con dedizione da Acharya Mohan e Yogini Daniela per coltivare equilibrio vitale, rigenerazione e calma mentale profonda.",
+        hero_btn_trial: "Prenota una Lezione di Prova",
+        hero_btn_courses: "Scopri i Corsi",
+        badge_loc: "Studio a Sorengo",
+        badge_tradition: "Lineaggio Autentico",
+        badge_diploma: "Formazione Certificata",
+        badge_retreats: "Ritiri in Kerala",
+        about_tag: "Spazio di Presenza e Serenità",
+        about_heading: "Benvenuti a Parvati Scuola di Yoga",
+        about_p1: "Prendendo il nome dalla Dea Parvati — simbolo universale di devozione, grazia e forza armoniosa — la nostra scuola a Sorengo è un rifugio di pace a pochi minuti dal centro di Lugano.",
+        about_p2: "Non pratichiamo yoga commerciale né ginnastica affrettata. Guidiamo ogni allievo attraverso la respirazione consapevole (Pranayama), le posture stabili (Asana) e la calma interiore, rispettando il ritmo individuale di ciascun corpo.",
+        about_feat1_title: "Pratica Graduale",
+        about_feat1_desc: "Adatta sia a principianti che a praticanti esperti.",
+        about_feat2_title: "Gruppi a Numero Chiuso",
+        about_feat2_desc: "Attenzione personalizzata e cura per ogni praticante.",
+        photo_slot_studio_title: "Foto dello Studio a Sorengo",
+        photo_slot_desc: "(Spazio riservato per la fotografia ufficiale della sala yoga, pavimento in legno e atmosfera serena)",
+        teachers_tag: "Tradizione Vivente",
+        teachers_heading: "I Nostri Insegnanti",
+        teachers_sub: "L'insegnamento è condotto da una guida con decenni di studio e dedizione autentica alla saggezza yogica.",
+        teacher_photo_acharya: "Foto Acharya Mohan",
+        teacher_photo_daniela: "Foto Yogini Daniela",
+        teacher_photo_slot: "(Spazio riservato per la foto)",
+        acharya_subtitle: "Guida Spirituale • Maestro di Kayakalpa & Maha Kundalini",
+        acharya_bio: "Autentica autorità nel metodo Kayakalpa e nel Maha Kundalini Yoga. Non propone teorie astratte ma trasmette una disciplina millenaria che rigenera la vitalità cellulare, calma la mente e risveglia le energie profonde dell'essere.",
+        daniela_subtitle: "Insegnante di Hatha Yoga • Diplomata Carlo Patrian Milano",
+        daniela_bio: "Diplomata presso lo storico Istituto Yoga Carlo Patrian di Milano e perfezionatasi nei centri tradizionali di Rishikesh (India). Guida da molti anni le lezioni a Sorengo con dolcezza, precisione posturale e profonda sensibilità pedagogica.",
+        courses_tag: "I Nostri Corsi",
+        courses_heading: "Lezioni a Sorengo - Lugano",
+        courses_sub: "Dalle basi dell'Hatha Yoga alle pratiche avanzate di rigenerazione cellulare.",
+        course1_title: "Hatha Yoga Tradizionale",
+        course1_desc: "Postura (Asana), allineamento dolce, respiro consapevole (Pranayama) e rilassamento finale. Ideale per ritrovare flessibilità, vitalità e serenità.",
+        course2_title: "Kayakalpa Yoga",
+        course2_desc: "Antica scienza dei Siddha trasmessa dall'Acharya Mohan per il ringiovanimento cellulare, la tonificazione degli organi interni e la trasmutazione dell'energia vitale.",
+        course3_title: "Meditazione & Pranayama",
+        course3_desc: "Tecniche mirate di controllo del prana e silenzio mentale. Per sciogliere l'ansia, acuire la concentrazione e vivere nella quiete interiore.",
+        level_all: "Tutti i livelli",
+        level_special: "Metodo Speciale",
+        sched_title: "Orari Settimanali Indicativi",
+        th_day: "Giorno",
+        th_time: "Orario",
+        th_course: "Corso",
+        th_teacher: "Insegnante",
+        day_mon: "Lunedì",
+        day_wed: "Mercoledì",
+        day_fri: "Venerdì",
+        sched_note: "* Gli orari possono variare in base ai periodi dell'anno e ai ritiri in India. Contattaci per confermare il calendario aggiornato.",
+        retreat_tag: "Il Ponte Spirituale",
+        retreat_heading: "Ritiri Residenziali a Santhivanam Ashram (Kerala, India)",
+        retreat_p1: "Ogni anno, gli allievi di Parvati Scuola di Yoga hanno l'opportunità unica di immergersi nella pratica residenziale presso il nostro ashram gemello in India: Santhivanam Yoga Ashram a Kanakamala, Kerala.",
+        retreat_p2: "Tra colline tropicali incontaminate, cibo ayurvedico puro e sadhana quotidiana con l'Acharya, l'esperienza a Santhivanam trasforma la comprensione dello yoga in un'esperienza vivente.",
+        retreat_photo_title: "Foto Santhivanam Ashram Kerala",
+        retreat_photo_desc: "(Spazio riservato per le immagini dell'ashram, della natura tropicale e dei ritiri residenziali)",
+        contact_tag: "Inizia il Tuo Percorso",
+        contact_heading: "Contattaci & Vieni a Trovarci",
+        contact_sub: "Siamo a Sorengo, a pochi minuti da Lugano. Scrivici o telefonaci per prenotare la tua prima lezione di prova.",
+        loc_title: "Sede della Scuola",
+        phone_title: "Telefono & WhatsApp",
+        email_title: "Email",
+        form_title: "Richiesta Lezione di Prova",
+        form_sub: "Compila il modulo per inviarci un messaggio diretto o prenotare una prova.",
+        form_name: "Nome e Cognome *",
+        form_phone: "Telefono / WhatsApp *",
+        form_email: "Email",
+        form_course_select: "Corso di Interesse",
+        form_msg: "Messaggio o Note",
+        form_submit: "Invia Richiesta via WhatsApp",
+        footer_sub: "Sorengo - Lugano (Svizzera) • Insegnamenti di Acharya Mohan & Yogini Daniela"
+      },
+      en: {
+        lang_btn: "🇬🇧 EN",
+        top_bar_location: "Sorengo - Lugano (Switzerland) & Santhivanam Ashram (Kerala, India)",
+        cta_whatsapp: "Chat with Us",
+        nav_school: "The School",
+        nav_teachers: "Teachers",
+        nav_courses: "Courses & Times",
+        nav_retreats: "Kerala Retreats",
+        nav_contact: "Contact",
+        hero_badge: "Sorengo - Lugano • Switzerland",
+        hero_title_sub: "Authentic Yogic Tradition",
+        hero_description: "An authentic, welcoming yoga school in Sorengo-Lugano, active for many years. Dedicatedly guided by Acharya Mohan and Yogini Daniela to cultivate vital balance, cellular rejuvenation, and deep inner stillness.",
+        hero_btn_trial: "Book a Trial Class",
+        hero_btn_courses: "Explore Courses",
+        badge_loc: "Sorengo Studio",
+        badge_tradition: "Authentic Lineage",
+        badge_diploma: "Certified Guidance",
+        badge_retreats: "Kerala Retreats",
+        about_tag: "Presence & Serenity",
+        about_heading: "Welcome to Parvati Yoga School",
+        about_p1: "Named after Mother Goddess Parvati — the universal symbol of devotion, grace, and harmonious strength — our school in Sorengo is a peaceful sanctuary just minutes from central Lugano.",
+        about_p2: "We do not practice commercial fitness yoga. We guide each student through conscious breathing (Pranayama), steady postures (Asana), and profound inner stillness, honoring each body's natural pace.",
+        about_feat1_title: "Gradual Practice",
+        about_feat1_desc: "Accessible and nourishing for both beginners and experienced yogis.",
+        about_feat2_title: "Small Groups",
+        about_feat2_desc: "Personalized attention and care for every practitioner.",
+        photo_slot_studio_title: "Sorengo Studio Photo",
+        photo_slot_desc: "(Reserved space for official photo of the yoga hall with natural wooden floor and serene ambiance)",
+        teachers_tag: "Living Tradition",
+        teachers_heading: "Our Teachers",
+        teachers_sub: "Direct instruction rooted in decades of genuine study and commitment to yogic wisdom.",
+        teacher_photo_acharya: "Photo Acharya Mohan",
+        teacher_photo_daniela: "Photo Yogini Daniela",
+        teacher_photo_slot: "(Reserved space for photo)",
+        acharya_subtitle: "Spiritual Guide • Master of Kayakalpa & Maha Kundalini",
+        acharya_bio: "A true living authority on Kayakalpa and Maha Kundalini Yoga. He transmits an exact physiological and spiritual science that rejuvenates cells, calms the restless mind, and awakens vital energy.",
+        daniela_subtitle: "Hatha Yoga Teacher • Graduated Carlo Patrian Milan",
+        daniela_bio: "Graduated from the historic Carlo Patrian Yoga Institute of Milan with advanced training in traditional Rishikesh centers (India). She has led classes in Sorengo for years with gentle precision and pedagogic warmth.",
+        courses_tag: "Our Programs",
+        courses_heading: "Classes in Sorengo - Lugano",
+        courses_sub: "From foundational Hatha Yoga to advanced cellular rejuvenation sadhana.",
+        course1_title: "Traditional Hatha Yoga",
+        course1_desc: "Gentle postures (Asana), structural alignment, conscious breathwork (Pranayama), and restorative relaxation. Ideal for flexibility and nervous system reset.",
+        course2_title: "Kayakalpa Yoga",
+        course2_desc: "Millennial Siddha science imparted by Acharya Mohan for cellular regeneration, endocrine tonification, and vital life-force transmutation.",
+        course3_title: "Meditation & Pranayama",
+        course3_desc: "Targeted breath control techniques and inner stillness. Dissolves anxiety, sharpens focus, and establishes abiding inner peace.",
+        level_all: "All Levels",
+        level_special: "Special Lineage",
+        sched_title: "Indicative Weekly Timetable",
+        th_day: "Day",
+        th_time: "Time",
+        th_course: "Course",
+        th_teacher: "Teacher",
+        day_mon: "Monday",
+        day_wed: "Wednesday",
+        day_fri: "Friday",
+        sched_note: "* Timetable may adjust across seasons and during residential retreats in India. Please contact us to confirm current schedule.",
+        retreat_tag: "The Sacred Bridge",
+        retreat_heading: "Residential Retreats at Santhivanam Ashram (Kerala, India)",
+        retreat_p1: "Each year, Parvati Yoga School students enjoy the rare opportunity to immerse themselves in residential sadhana at our sister ashram in India: Santhivanam Yoga Ashram in Kanakamala, Kerala.",
+        retreat_p2: "Surrounded by pristine tropical hills, nourishing Ayurvedic meals, and daily sadhana under Acharya's personal guidance, Santhivanam grounds yoga as a living reality.",
+        retreat_photo_title: "Santhivanam Ashram Kerala Photo",
+        retreat_photo_desc: "(Reserved space for ashram photos, tropical greenery, and residential retreats)",
+        contact_tag: "Begin Your Practice",
+        contact_heading: "Contact & Visit Us",
+        contact_sub: "Located in Sorengo, just minutes from Lugano. Send us a message or call to book your first trial class.",
+        loc_title: "Studio Location",
+        phone_title: "Phone & WhatsApp",
+        email_title: "Email",
+        form_title: "Request a Trial Class",
+        form_sub: "Fill out the form below to send us a direct message or book your visit.",
+        form_name: "Full Name *",
+        form_phone: "Phone / WhatsApp *",
+        form_email: "Email",
+        form_course_select: "Selected Course",
+        form_msg: "Message or Notes",
+        form_submit: "Send Request via WhatsApp",
+        footer_sub: "Sorengo - Lugano (Switzerland) • Teachings by Acharya Mohan & Yogini Daniela"
+      }
+    };
+
+    let currentLang = 'it';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      document.getElementById('currentLangLabel').textContent = translations[lang].lang_btn;
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+    }
+
+    function toggleLanguage() {
+      setLanguage(currentLang === 'it' ? 'en' : 'it');
+    }
+  </script>
+</body>
+</html>
