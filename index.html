@@ -343,22 +343,31 @@
         <!-- Course 1: Maha Kundalini Yoga -->
         <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
           <div>
-            <div class="h-56 overflow-hidden relative">
-              <img src="assets/images/chakra-meditation-art.jpg" alt="Maha Kundalini Yoga" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-alpineForest/80 backdrop-blur-sm text-ivory text-xs font-semibold" data-i18n="level_all">
+            <div class="h-80 sm:h-96 overflow-hidden relative cursor-pointer group/img bg-alpineForest-deep" onclick="openDetailModal('course1')" title="Clicca per espandere">
+              <img src="assets/images/chakra-meditation-art.jpg" alt="Maha Kundalini Yoga" class="w-full h-full object-cover object-center group-hover/img:scale-105 transition duration-700" />
+              <div class="absolute inset-0 bg-alpineForest-deep/30 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="px-4 py-2 rounded-full bg-alpineForest-deep/85 backdrop-blur-md text-white text-xs font-semibold tracking-wider uppercase flex items-center gap-1.5 shadow-lg border border-white/20 transform translate-y-2 group-hover/img:translate-y-0 transition-transform duration-300">
+                  <svg class="w-3.5 h-3.5 text-templeGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+                  <span data-i18n="btn_expand">Espandi</span>
+                </span>
+              </div>
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-alpineForest/80 backdrop-blur-sm text-ivory text-xs font-semibold shadow" data-i18n="level_all">
                 Tutti i livelli
               </div>
             </div>
             <div class="p-6 sm:p-8">
               <div class="text-roseTerracotta font-display text-sm font-bold mb-2" data-i18n="course1_cat">01 &bull; DISCIPLINA CARDINE</div>
-              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course1_title">Maha Kundalini Yoga</h3>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3 cursor-pointer hover:text-roseTerracotta transition" onclick="openDetailModal('course1')" data-i18n="course1_title">Maha Kundalini Yoga</h3>
               <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="course1_desc">
                 Lo yoga della forza fisica e mentale. Attraverso asana ed esercizi specifici, prepara e armonizza i sistemi respiratorio, circolatorio, linfatico, nervoso ed energetico sottile, favorendo il naturale fluire dell'energia cosmica in ogni cellula. Risveglia l'energia divina attraverso i chakra, trasformando la mente oltre i propri limiti e donando libertà interiore, pace, armonia ed equilibrio.
               </p>
             </div>
           </div>
-          <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0">
-            <a href="#orari" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
+          <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 flex items-center justify-between gap-2 border-t border-parvatiSand/40 pt-4">
+            <button type="button" onclick="openDetailModal('course1')" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1 group/btn">
+              <span data-i18n="btn_read_more">Dettagli &amp; Arte</span> <span class="group-hover/btn:translate-x-0.5 transition-transform">&nearr;</span>
+            </button>
+            <a href="#orari" class="inline-flex items-center text-xs font-semibold text-mutedSlate hover:text-alpineForest uppercase tracking-wider gap-1">
               <span data-i18n="btn_view_sched">Vedi Orari</span> &rarr;
             </a>
           </div>
@@ -367,22 +376,31 @@
         <!-- Course 2: Kaya Kalpa Yoga -->
         <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
           <div>
-            <div class="h-56 overflow-hidden relative">
-              <img src="assets/images/kayakalpa-yoga-art.jpg" alt="Kaya Kalpa Yoga" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-templeGold text-alpineForest-deep text-xs font-bold" data-i18n="level_special">
+            <div class="h-80 sm:h-96 overflow-hidden relative cursor-pointer group/img bg-alpineForest-deep" onclick="openDetailModal('course2')" title="Clicca per espandere">
+              <img src="assets/images/kayakalpa-yoga-art.jpg" alt="Kaya Kalpa Yoga" class="w-full h-full object-cover object-center group-hover/img:scale-105 transition duration-700" />
+              <div class="absolute inset-0 bg-alpineForest-deep/30 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="px-4 py-2 rounded-full bg-alpineForest-deep/85 backdrop-blur-md text-white text-xs font-semibold tracking-wider uppercase flex items-center gap-1.5 shadow-lg border border-white/20 transform translate-y-2 group-hover/img:translate-y-0 transition-transform duration-300">
+                  <svg class="w-3.5 h-3.5 text-templeGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+                  <span data-i18n="btn_expand">Espandi</span>
+                </span>
+              </div>
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-templeGold text-alpineForest-deep text-xs font-bold shadow" data-i18n="level_special">
                 Metodo Speciale
               </div>
             </div>
             <div class="p-6 sm:p-8">
               <div class="text-roseTerracotta font-display text-sm font-bold mb-2" data-i18n="course2_cat">02 &bull; SCIENZA DEI SIDDHA</div>
-              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course2_title">Kaya Kalpa Yoga</h3>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3 cursor-pointer hover:text-roseTerracotta transition" onclick="openDetailModal('course2')" data-i18n="course2_title">Kaya Kalpa Yoga</h3>
               <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="course2_desc">
                 Antica scienza yogica dei Siddha dedicata alla longevità e alla giovinezza fisica e mentale. Attraverso respirazione mirata, sankalpa (intenzione consapevole) e la meditazione sulle quattro energie — lunare (Chandrayana), solare (Suryayana), mentale (Mahayana) e cosmica (Sahasrayana) — riprogramma la vita a livello cellulare, risvegliando il potenziale trascendentale fino a connettersi con l'Assoluto.
               </p>
             </div>
           </div>
-          <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0">
-            <a href="#orari" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
+          <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 flex items-center justify-between gap-2 border-t border-parvatiSand/40 pt-4">
+            <button type="button" onclick="openDetailModal('course2')" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1 group/btn">
+              <span data-i18n="btn_read_more">Dettagli &amp; Arte</span> <span class="group-hover/btn:translate-x-0.5 transition-transform">&nearr;</span>
+            </button>
+            <a href="#orari" class="inline-flex items-center text-xs font-semibold text-mutedSlate hover:text-alpineForest uppercase tracking-wider gap-1">
               <span data-i18n="btn_view_sched">Vedi Orari</span> &rarr;
             </a>
           </div>
@@ -391,22 +409,31 @@
         <!-- Course 3: Pranayama & Meditazione -->
         <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
           <div>
-            <div class="h-56 overflow-hidden relative">
-              <img src="assets/images/seven-chakras-pillar.jpg" alt="Pranayama e Meditazione" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-alpineForest/80 backdrop-blur-sm text-ivory text-xs font-semibold" data-i18n="level_all">
+            <div class="h-80 sm:h-96 overflow-hidden relative cursor-pointer group/img bg-alpineForest-deep" onclick="openDetailModal('course3')" title="Clicca per espandere">
+              <img src="assets/images/seven-chakras-pillar.jpg" alt="Pranayama e Meditazione" class="w-full h-full object-cover object-center group-hover/img:scale-105 transition duration-700" />
+              <div class="absolute inset-0 bg-alpineForest-deep/30 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="px-4 py-2 rounded-full bg-alpineForest-deep/85 backdrop-blur-md text-white text-xs font-semibold tracking-wider uppercase flex items-center gap-1.5 shadow-lg border border-white/20 transform translate-y-2 group-hover/img:translate-y-0 transition-transform duration-300">
+                  <svg class="w-3.5 h-3.5 text-templeGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+                  <span data-i18n="btn_expand">Espandi</span>
+                </span>
+              </div>
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-alpineForest/80 backdrop-blur-sm text-ivory text-xs font-semibold shadow" data-i18n="level_all">
                 Tutti i livelli
               </div>
             </div>
             <div class="p-6 sm:p-8">
               <div class="text-roseTerracotta font-display text-sm font-bold mb-2" data-i18n="course3_cat">03 &bull; CONTROLLO DEL PRANA</div>
-              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="course3_title">Pranayama &amp; Meditazione</h3>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3 cursor-pointer hover:text-roseTerracotta transition" onclick="openDetailModal('course3')" data-i18n="course3_title">Pranayama &amp; Meditazione</h3>
               <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="course3_desc">
                 Tecniche mirate di Maha Kundalini Pranayama, Fire Breathing (respirazione del fuoco) e silenzio mentale per ripulire i canali sottili, sciogliere ansia e stress e stabilire la quiete interiore.
               </p>
             </div>
           </div>
-          <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0">
-            <a href="#orari" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
+          <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 flex items-center justify-between gap-2 border-t border-parvatiSand/40 pt-4">
+            <button type="button" onclick="openDetailModal('course3')" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1 group/btn">
+              <span data-i18n="btn_read_more">Dettagli &amp; Arte</span> <span class="group-hover/btn:translate-x-0.5 transition-transform">&nearr;</span>
+            </button>
+            <a href="#orari" class="inline-flex items-center text-xs font-semibold text-mutedSlate hover:text-alpineForest uppercase tracking-wider gap-1">
               <span data-i18n="btn_view_sched">Vedi Orari</span> &rarr;
             </a>
           </div>
@@ -435,21 +462,30 @@
         <!-- Session 1: Karma Reading -->
         <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
           <div>
-            <div class="h-64 overflow-hidden relative">
-              <img src="assets/images/karma-reading.png" alt="Karma Reading - Lettura delle vite passate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-roseTerracotta text-white text-xs font-semibold" data-i18n="badge_individual">
+            <div class="h-80 sm:h-96 overflow-hidden relative cursor-pointer group/img bg-alpineForest-deep" onclick="openDetailModal('session1')" title="Clicca per espandere">
+              <img src="assets/images/karma-reading.png" alt="Karma Reading - Lettura delle vite passate" class="w-full h-full object-cover object-center group-hover/img:scale-105 transition duration-700" />
+              <div class="absolute inset-0 bg-alpineForest-deep/30 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="px-4 py-2 rounded-full bg-alpineForest-deep/85 backdrop-blur-md text-white text-xs font-semibold tracking-wider uppercase flex items-center gap-1.5 shadow-lg border border-white/20 transform translate-y-2 group-hover/img:translate-y-0 transition-transform duration-300">
+                  <svg class="w-3.5 h-3.5 text-templeGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+                  <span data-i18n="btn_expand">Espandi</span>
+                </span>
+              </div>
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-roseTerracotta text-white text-xs font-semibold shadow" data-i18n="badge_individual">
                 Seduta Individuale
               </div>
             </div>
             <div class="p-6 sm:p-8">
               <div class="text-templeGold-dark font-display text-xs font-bold mb-2 tracking-wider uppercase" data-i18n="session1_cat">LETTURA DELLE VITE PASSATE</div>
-              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="session1_title">Karma Reading</h3>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3 cursor-pointer hover:text-roseTerracotta transition" onclick="openDetailModal('session1')" data-i18n="session1_title">Karma Reading</h3>
               <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="session1_desc">
                 Conoscere le proprie vite passate, scoprire chi eravamo e comprendere chi siamo oggi ci aiuta a dare un senso profondo alla vita presente. Una sessione di Karma Reading permette di riconoscere i propri punti di forza, sviluppare il potenziale innato e sciogliere ogni dubbio. Una maggiore consapevolezza di sé per compiere scelte consapevoli, realizzare i propri sogni e vivere con chiarezza, armonia e profonda pace interiore.
               </p>
             </div>
           </div>
-          <div class="p-6 sm:p-8 pt-0">
+          <div class="p-6 sm:p-8 pt-0 flex items-center justify-between gap-2 border-t border-parvatiSand/40 pt-4">
+            <button type="button" onclick="openDetailModal('session1')" class="inline-flex items-center text-xs font-semibold text-templeGold-dark hover:text-alpineForest uppercase tracking-wider gap-1 group/btn">
+              <span data-i18n="btn_read_more">Dettagli &amp; Arte</span> <span class="group-hover/btn:translate-x-0.5 transition-transform">&nearr;</span>
+            </button>
             <a href="#contatti" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
               <span data-i18n="btn_book_session">Prenota Seduta</span> &rarr;
             </a>
@@ -459,21 +495,30 @@
         <!-- Session 2: Karmic Healing -->
         <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
           <div>
-            <div class="h-64 overflow-hidden relative">
-              <img src="assets/images/karmic-healing.png" alt="Karmic Healing" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-roseTerracotta text-white text-xs font-semibold" data-i18n="badge_individual">
+            <div class="h-80 sm:h-96 overflow-hidden relative cursor-pointer group/img bg-alpineForest-deep" onclick="openDetailModal('session2')" title="Clicca per espandere">
+              <img src="assets/images/karmic-healing.png" alt="Karmic Healing" class="w-full h-full object-cover object-center group-hover/img:scale-105 transition duration-700" />
+              <div class="absolute inset-0 bg-alpineForest-deep/30 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="px-4 py-2 rounded-full bg-alpineForest-deep/85 backdrop-blur-md text-white text-xs font-semibold tracking-wider uppercase flex items-center gap-1.5 shadow-lg border border-white/20 transform translate-y-2 group-hover/img:translate-y-0 transition-transform duration-300">
+                  <svg class="w-3.5 h-3.5 text-templeGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+                  <span data-i18n="btn_expand">Espandi</span>
+                </span>
+              </div>
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-roseTerracotta text-white text-xs font-semibold shadow" data-i18n="badge_individual">
                 Seduta Individuale
               </div>
             </div>
             <div class="p-6 sm:p-8">
               <div class="text-templeGold-dark font-display text-xs font-bold mb-2 tracking-wider uppercase" data-i18n="session2_cat">ARMONIA CELLULARE &amp; DESTINO</div>
-              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="session2_title">Karmic Healing</h3>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3 cursor-pointer hover:text-roseTerracotta transition" onclick="openDetailModal('session2')" data-i18n="session2_title">Karmic Healing</h3>
               <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="session2_desc">
                 Il karma non è permanente: i suoi effetti possono essere trasformati, guariti o neutralizzati. Il Karmic Healing riequilibra il flusso energetico nelle cellule, sciogliendo blocchi radicati e favorendo armonia interiore e nuova forza. Un percorso per guardare al futuro con serenità, prendere decisioni consapevoli libere dai dubbi e riprendere saldamente le redini della propria vita per costruire un'esistenza felice, equilibrata e appagante.
               </p>
             </div>
           </div>
-          <div class="p-6 sm:p-8 pt-0">
+          <div class="p-6 sm:p-8 pt-0 flex items-center justify-between gap-2 border-t border-parvatiSand/40 pt-4">
+            <button type="button" onclick="openDetailModal('session2')" class="inline-flex items-center text-xs font-semibold text-templeGold-dark hover:text-alpineForest uppercase tracking-wider gap-1 group/btn">
+              <span data-i18n="btn_read_more">Dettagli &amp; Arte</span> <span class="group-hover/btn:translate-x-0.5 transition-transform">&nearr;</span>
+            </button>
             <a href="#contatti" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
               <span data-i18n="btn_book_session">Prenota Seduta</span> &rarr;
             </a>
@@ -483,21 +528,30 @@
         <!-- Session 3: Ayurvedic Body Cleaning -->
         <div class="bg-white rounded-3xl overflow-hidden border border-parvatiSand shadow-sm hover:border-templeGold transition group flex flex-col justify-between">
           <div>
-            <div class="h-64 overflow-hidden relative">
-              <img src="assets/images/kayakalpa-meditazione-poster.png" alt="Ayurvedic Body Cleaning" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-roseTerracotta text-white text-xs font-semibold" data-i18n="badge_treatment">
+            <div class="h-80 sm:h-96 overflow-hidden relative cursor-pointer group/img bg-alpineForest-deep" onclick="openDetailModal('session3')" title="Clicca per espandere">
+              <img src="assets/images/kayakalpa-meditazione-poster.png" alt="Ayurvedic Body Cleaning" class="w-full h-full object-cover object-center group-hover/img:scale-105 transition duration-700" />
+              <div class="absolute inset-0 bg-alpineForest-deep/30 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="px-4 py-2 rounded-full bg-alpineForest-deep/85 backdrop-blur-md text-white text-xs font-semibold tracking-wider uppercase flex items-center gap-1.5 shadow-lg border border-white/20 transform translate-y-2 group-hover/img:translate-y-0 transition-transform duration-300">
+                  <svg class="w-3.5 h-3.5 text-templeGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+                  <span data-i18n="btn_expand">Espandi</span>
+                </span>
+              </div>
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-roseTerracotta text-white text-xs font-semibold shadow" data-i18n="badge_treatment">
                 Trattamento Energetico
               </div>
             </div>
             <div class="p-6 sm:p-8">
               <div class="text-templeGold-dark font-display text-xs font-bold mb-2 tracking-wider uppercase" data-i18n="session3_cat">MASSAGGIO OLISTICO &amp; DETOX</div>
-              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3" data-i18n="session3_title">Ayurvedic Body Cleaning</h3>
+              <h3 class="font-serif text-2xl font-bold text-alpineForest mb-3 cursor-pointer hover:text-roseTerracotta transition" onclick="openDetailModal('session3')" data-i18n="session3_title">Ayurvedic Body Cleaning</h3>
               <p class="text-xs sm:text-sm text-mutedSlate leading-relaxed" data-i18n="session3_desc">
                 Trattamento di massaggio olistico secondo l'antica medicina ayurvedica per eliminare le tossine (Mala) accumulate nei muscoli, nelle articolazioni e nei sistemi circolatorio, linfatico e nervoso. Favorisce il risveglio e il fluire delle energie sottili dai piedi alla corona, allevia dolori e infiammazioni, tonifica la pelle e restituisce equilibrio e vitalità già dopo la prima seduta: un autentico dono per se stessi.
               </p>
             </div>
           </div>
-          <div class="p-6 sm:p-8 pt-0">
+          <div class="p-6 sm:p-8 pt-0 flex items-center justify-between gap-2 border-t border-parvatiSand/40 pt-4">
+            <button type="button" onclick="openDetailModal('session3')" class="inline-flex items-center text-xs font-semibold text-templeGold-dark hover:text-alpineForest uppercase tracking-wider gap-1 group/btn">
+              <span data-i18n="btn_read_more">Dettagli &amp; Arte</span> <span class="group-hover/btn:translate-x-0.5 transition-transform">&nearr;</span>
+            </button>
             <a href="#contatti" class="inline-flex items-center text-xs font-semibold text-roseTerracotta hover:text-roseTerracotta-dark uppercase tracking-wider gap-1">
               <span data-i18n="btn_book_session">Prenota Seduta</span> &rarr;
             </a>
@@ -654,11 +708,19 @@
       </div>
 
       <!-- Official Timetable Card Visual -->
-      <div class="max-w-3xl mx-auto rounded-3xl overflow-hidden border-2 border-parvatiSand shadow-md bg-white p-4 sm:p-6 text-center">
+      <div class="max-w-3xl mx-auto rounded-3xl overflow-hidden border-2 border-parvatiSand shadow-md bg-white p-4 sm:p-6 text-center cursor-pointer group/sched" onclick="openDetailModal('timetable')">
         <h4 class="font-serif font-bold text-alpineForest text-lg mb-4" data-i18n="visual_card_title">
           Scheda Orario &amp; Tariffe Ufficiale Yoga Parvati
         </h4>
-        <img src="assets/images/orario-settimanale.png" alt="Scheda Orario Settimanale Yoga Parvati Sorengo" class="w-full h-auto rounded-xl mx-auto shadow-sm border border-parvatiSand/50" />
+        <div class="relative overflow-hidden rounded-xl">
+          <img src="assets/images/orario-settimanale.png" alt="Scheda Orario Settimanale Yoga Parvati Sorengo" class="w-full h-auto rounded-xl mx-auto shadow-sm border border-parvatiSand/50 group-hover/sched:scale-[1.02] transition duration-500" />
+          <div class="absolute inset-0 bg-alpineForest-deep/20 opacity-0 group-hover/sched:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="px-4 py-2 rounded-full bg-alpineForest-deep/85 backdrop-blur-md text-white text-xs font-semibold tracking-wider uppercase flex items-center gap-1.5 shadow-lg border border-white/20">
+              <svg class="w-3.5 h-3.5 text-templeGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+              <span data-i18n="btn_expand">Espandi</span>
+            </span>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -849,6 +911,46 @@
     </div>
   </footer>
 
+  <!-- ==================== RICH DETAIL & ARTWORK MODAL (A+C) ==================== -->
+  <div id="detailModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 transition-all duration-300 opacity-0 pointer-events-none" onclick="handleModalBackdropClick(event)">
+    <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[92vh] overflow-hidden shadow-2xl border border-templeGold/30 flex flex-col md:flex-row relative transform transition-all duration-300 scale-95" id="detailModalBox" onclick="event.stopPropagation()">
+      
+      <!-- Close Button -->
+      <button onclick="closeDetailModal()" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-alpineForest-deep/80 hover:bg-alpineForest text-white flex items-center justify-center transition shadow-lg border border-white/20 text-xl leading-none" aria-label="Chiudi">
+        &times;
+      </button>
+
+      <!-- Left Column: 100% Full Uncropped Artwork -->
+      <div class="md:w-1/2 bg-alpineForest-deep p-4 sm:p-6 flex flex-col items-center justify-center relative min-h-[300px] md:min-h-[520px]">
+        <div class="w-full h-full flex items-center justify-center">
+          <img id="modalImg" src="" alt="" class="max-h-[46vh] md:max-h-[75vh] w-auto h-auto max-w-full object-contain rounded-2xl shadow-2xl border border-white/10" />
+        </div>
+        <div id="modalBadge" class="mt-3 px-3.5 py-1 rounded-full bg-templeGold text-alpineForest-deep text-xs font-bold tracking-wider uppercase shadow"></div>
+      </div>
+
+      <!-- Right Column: Rich Content & Context -->
+      <div class="md:w-1/2 p-6 sm:p-8 lg:p-10 flex flex-col justify-between overflow-y-auto max-h-[46vh] md:max-h-[85vh] bg-ivory">
+        <div>
+          <div id="modalCat" class="text-roseTerracotta font-display text-xs font-bold uppercase tracking-wider mb-2"></div>
+          <h3 id="modalTitle" class="font-serif text-2xl sm:text-3xl font-bold text-alpineForest mb-3"></h3>
+          <div class="w-12 h-0.5 bg-templeGold mb-4"></div>
+          <div id="modalDesc" class="text-xs sm:text-sm text-mutedSlate leading-relaxed space-y-3 font-sans"></div>
+        </div>
+
+        <div class="pt-6 mt-6 border-t border-parvatiSand/60 flex flex-col sm:flex-row gap-3">
+          <a id="modalWaBtn" href="" target="_blank" class="flex-1 py-3 px-5 rounded-full bg-roseTerracotta hover:bg-roseTerracotta-dark text-white font-medium text-xs sm:text-sm tracking-wider uppercase transition shadow-md text-center flex items-center justify-center gap-2">
+            <span>💬</span>
+            <span id="modalWaBtnText">Prenota su WhatsApp</span>
+          </a>
+          <button onclick="closeDetailModal()" class="py-3 px-5 rounded-full border border-parvatiSand hover:border-alpineForest text-alpineForest text-xs sm:text-sm font-semibold tracking-wider uppercase transition text-center" data-i18n="modal_close">
+            Chiudi
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <!-- ==================== SCRIPT (100% AIRTIGHT i18n & WHATSAPP) ==================== -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -1014,7 +1116,11 @@
         form_placeholder_email: "nome@esempio.com",
         form_placeholder_msg: "Scrivi qui eventuali esigenze, giorni preferiti o domande...",
         footer_sub: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano) • Fondata nel 1996 dall'Acharya Sooryanarayan",
-        footer_rights: "Tutti i diritti riservati."
+        footer_rights: "Tutti i diritti riservati.",
+        btn_expand: "Espandi",
+        btn_read_more: "Dettagli &amp; Arte",
+        modal_close: "Chiudi",
+        modal_wa_btn: "Prenota su WhatsApp"
       },
       en: {
         doc_title: "Parvati Yoga School | Sorengo - Lugano & Santhivanam India",
@@ -1155,7 +1261,11 @@
         form_placeholder_email: "name@example.com",
         form_placeholder_msg: "Share any health notes, preferred times or questions...",
         footer_sub: "Via Ponte Tresa 7B, 6924 Sorengo (Lugano) • Founded in 1996 by Acharya Sooryanarayan",
-        footer_rights: "All rights reserved."
+        footer_rights: "All rights reserved.",
+        btn_expand: "Expand",
+        btn_read_more: "Details &amp; Art",
+        modal_close: "Close",
+        modal_wa_btn: "Inquire on WhatsApp"
       }
     };
 
@@ -1215,7 +1325,139 @@
           el.placeholder = translations[lang][key];
         }
       });
+
+      // If modal is currently open, refresh its content in newly selected language
+      if (activeModalKey) {
+        openDetailModal(activeModalKey);
+      }
     }
+
+    // ==================== DETAIL MODAL CONTROLLER ====================
+    let activeModalKey = null;
+
+    const modalItems = {
+      course1: {
+        img: "assets/images/chakra-meditation-art.jpg",
+        badgeKey: "level_all",
+        catKey: "course1_cat",
+        titleKey: "course1_title",
+        descKey: "course1_desc",
+        interest: "Maha Kundalini Yoga"
+      },
+      course2: {
+        img: "assets/images/kayakalpa-yoga-art.jpg",
+        badgeKey: "level_special",
+        catKey: "course2_cat",
+        titleKey: "course2_title",
+        descKey: "course2_desc",
+        interest: "Kaya Kalpa Yoga"
+      },
+      course3: {
+        img: "assets/images/seven-chakras-pillar.jpg",
+        badgeKey: "level_all",
+        catKey: "course3_cat",
+        titleKey: "course3_title",
+        descKey: "course3_desc",
+        interest: "Pranayama & Meditazione"
+      },
+      session1: {
+        img: "assets/images/karma-reading.png",
+        badgeKey: "badge_individual",
+        catKey: "session1_cat",
+        titleKey: "session1_title",
+        descKey: "session1_desc",
+        interest: "Karma Reading"
+      },
+      session2: {
+        img: "assets/images/karmic-healing.png",
+        badgeKey: "badge_individual",
+        catKey: "session2_cat",
+        titleKey: "session2_title",
+        descKey: "session2_desc",
+        interest: "Karmic Healing"
+      },
+      session3: {
+        img: "assets/images/kayakalpa-meditazione-poster.png",
+        badgeKey: "badge_treatment",
+        catKey: "session3_cat",
+        titleKey: "session3_title",
+        descKey: "session3_desc",
+        interest: "Ayurvedic Body Cleaning"
+      },
+      timetable: {
+        img: "assets/images/orario-settimanale.png",
+        badgeKey: "table_badge_active",
+        catKey: "sched_tag",
+        titleKey: "visual_card_title",
+        descKey: "sched_sub",
+        interest: "Orario Settimanale & Tariffe"
+      }
+    };
+
+    function openDetailModal(key) {
+      const item = modalItems[key];
+      if (!item) return;
+      activeModalKey = key;
+
+      const modal = document.getElementById('detailModal');
+      const box = document.getElementById('detailModalBox');
+      const img = document.getElementById('modalImg');
+      const badge = document.getElementById('modalBadge');
+      const cat = document.getElementById('modalCat');
+      const title = document.getElementById('modalTitle');
+      const desc = document.getElementById('modalDesc');
+      const waBtn = document.getElementById('modalWaBtn');
+      const waBtnText = document.getElementById('modalWaBtnText');
+
+      const dict = translations[currentLang] || translations.it;
+
+      img.src = item.img;
+      img.alt = (dict[item.titleKey] || '').replace(/<[^>]*>?/gm, '');
+      badge.innerHTML = dict[item.badgeKey] || '';
+      cat.innerHTML = dict[item.catKey] || '';
+      title.innerHTML = dict[item.titleKey] || '';
+      desc.innerHTML = `<p>${dict[item.descKey] || ''}</p>`;
+      if (waBtnText) {
+        waBtnText.innerHTML = dict.modal_wa_btn || (currentLang === 'it' ? 'Prenota su WhatsApp' : 'Inquire on WhatsApp');
+      }
+
+      const cleanTitle = (dict[item.titleKey] || item.interest).replace(/<[^>]*>?/gm, '');
+      const waMsg = currentLang === 'it'
+        ? `Buongiorno Acharya Sooryanarayan, vorrei maggiori dettagli o prenotare per: ${cleanTitle}.`
+        : `Hello Acharya Sooryanarayan, I would like more details or to book regarding: ${cleanTitle}.`;
+      waBtn.href = `https://wa.me/41794683258?text=${encodeURIComponent(waMsg)}`;
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100');
+      box.classList.remove('scale-95');
+      box.classList.add('scale-100');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDetailModal() {
+      const modal = document.getElementById('detailModal');
+      const box = document.getElementById('detailModalBox');
+      if (!modal || !box) return;
+
+      activeModalKey = null;
+      modal.classList.remove('opacity-100');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      box.classList.remove('scale-100');
+      box.classList.add('scale-95');
+      document.body.style.overflow = '';
+    }
+
+    function handleModalBackdropClick(e) {
+      if (e.target.id === 'detailModal') {
+        closeDetailModal();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && activeModalKey) {
+        closeDetailModal();
+      }
+    });
 
     window.addEventListener('DOMContentLoaded', () => {
       const saved = localStorage.getItem('yogaparvaty_lang');
