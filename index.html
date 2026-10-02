@@ -173,7 +173,7 @@
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-templeGold/30 bg-alpineForest-light/70 text-templeGold-light text-xs font-semibold tracking-widest uppercase mb-6 shadow-sm">
         <span class="w-1.5 h-1.5 rounded-full bg-templeGold"></span>
-        <span data-i18n="hero_badge">Fondata nel 1996 a Sorengo-Lugano • Oltre 28 Anni di Tradizione</span>
+        <span data-i18n="hero_badge">Fondata nel 1996 a Sorengo-Lugano • Oltre 30 Anni di Tradizione</span>
       </div>
 
       <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-light tracking-wide text-ivory mb-6 text-balance">
@@ -203,7 +203,7 @@
       <div class="mt-16 pt-10 border-t border-ivory/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div>
           <div class="font-display text-xl sm:text-2xl font-bold text-templeGold">Dal 1996</div>
-          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_loc">Oltre 28 Anni a Sorengo (Lugano)</div>
+          <div class="text-xs text-ivory/70 mt-1" data-i18n="badge_loc">Oltre 30 Anni a Sorengo (Lugano)</div>
         </div>
         <div>
           <div class="font-display text-xl sm:text-2xl font-bold text-templeGold">Acharya Sooryanarayan</div>
@@ -629,7 +629,7 @@
               <tr class="hover:bg-ivory/40 transition">
                 <td class="py-3.5 px-4 text-mutedSlate font-medium">16:00</td>
                 <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_yd">Yoga Dolce</td>
-                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Yogini Devayani (Daniela)</td>
               </tr>
 
               <!-- Martedì -->
@@ -670,7 +670,7 @@
               <tr class="hover:bg-ivory/40 transition">
                 <td class="py-3.5 px-4 text-mutedSlate font-medium">20:15</td>
                 <td class="py-3.5 px-4 font-serif font-bold text-alpineForest" data-i18n="sched_yd">Yoga Dolce</td>
-                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Acharya Sooryanarayan</td>
+                <td class="py-3.5 px-4 text-xs font-semibold text-roseTerracotta">Yogini Devayani (Daniela)</td>
               </tr>
 
               <!-- Giovedì -->
@@ -743,13 +743,43 @@
             Tra colline tropicali incontaminate, cibo ayurvedico puro e sadhana quotidiana con l'Acharya Sooryanarayan, l'esperienza a Santhivanam trasforma la comprensione dello yoga in un'esperienza vivente e profondamente rigenerativa.
           </p>
 
-          <div class="flex flex-wrap gap-4">
-            <a href="https://santhivanam.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-templeGold hover:bg-templeGold-dark text-alpineForest-deep font-semibold text-xs uppercase tracking-wider transition shadow-md">
-              <span data-i18n="link_santhivanam">Visita Santhivanam.com ↗</span>
-            </a>
-            <a href="https://kayakalpayogam.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full border border-ivory/30 hover:border-templeGold text-ivory text-xs uppercase tracking-wider transition">
-              <span data-i18n="link_kayakalpa">Visita Kayakalpayogam.com ↗</span>
-            </a>
+          <!-- Announcement Status Cards instead of external links -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <!-- Santhivanam Retreat Announcement -->
+            <div class="p-5 rounded-2xl bg-alpineForest-deep/75 border border-templeGold/40 backdrop-blur-sm shadow-md flex flex-col justify-between">
+              <div>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-templeGold/20 text-templeGold text-[11px] font-bold tracking-wider uppercase mb-3">
+                  <span>📅</span> <span data-i18n="retreat_status_badge">Date in Arrivo</span>
+                </div>
+                <h4 class="font-serif font-bold text-white text-base mb-2" data-i18n="retreat_status_title">
+                  Prossimi Ritiri a Santhivanam
+                </h4>
+                <p class="text-xs text-ivory/70 leading-relaxed mb-4" data-i18n="retreat_status_desc">
+                  Le nuove date e il programma ufficiale per l'Ashram in Kerala verranno annunciati a breve.
+                </p>
+              </div>
+              <a href="https://wa.me/41794683258?text=Buongiorno%20Acharya%20Sooryanarayan%2C%20vorrei%20essere%20informato%20sulle%20prossime%20date%20dei%20ritiri%20in%20Kerala." target="_blank" class="inline-flex items-center text-xs font-semibold text-templeGold hover:text-white uppercase tracking-wider gap-1.5 transition">
+                <span data-i18n="retreat_wa_inquire">Richiedi Info in Anteprima</span> &rarr;
+              </a>
+            </div>
+
+            <!-- Kayakalpa Announcement -->
+            <div class="p-5 rounded-2xl bg-alpineForest-deep/75 border border-parvatiSand/30 backdrop-blur-sm shadow-md flex flex-col justify-between">
+              <div>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-roseTerracotta/30 text-roseTerracotta-light text-[11px] font-bold tracking-wider uppercase mb-3">
+                  <span>✨</span> <span data-i18n="kayakalpa_status_badge">Novità in Arrivo</span>
+                </div>
+                <h4 class="font-serif font-bold text-white text-base mb-2" data-i18n="kayakalpa_status_title">
+                  Kaya Kalpa &amp; Rigenerazione
+                </h4>
+                <p class="text-xs text-ivory/70 leading-relaxed mb-4" data-i18n="kayakalpa_status_desc">
+                  Informazioni entusiasmanti e approfondimenti sui seminari speciali in arrivo a breve.
+                </p>
+              </div>
+              <a href="#corsi" class="inline-flex items-center text-xs font-semibold text-ivory/80 hover:text-templeGold uppercase tracking-wider gap-1.5 transition">
+                <span data-i18n="kayakalpa_view_course">Scopri il Metodo nei Corsi</span> &rarr;
+              </a>
+            </div>
           </div>
         </div>
 
@@ -1014,12 +1044,12 @@
         nav_schedule: "Orari & Prezzi",
         nav_retreats: "Ritiri Kerala",
         nav_contact: "Contatti",
-        hero_badge: "Fondata nel 1996 a Sorengo-Lugano • Oltre 28 Anni di Tradizione",
+        hero_badge: "Fondata nel 1996 a Sorengo-Lugano • Oltre 30 Anni di Tradizione",
         hero_title_sub: "L'Autentica Tradizione Yogica",
         hero_description: "Un centro autentico e accogliente a Sorengo-Lugano in Via Ponte Tresa 7B. Guidato direttamente dall'Acharya Sooryanarayan (Mohan) per Hatha Yoga, Maha Kundalini Yoga, Kaya Kalpa, sedute di Karma Reading & Healing, Ayurvedic Body Cleaning e ritiri in Kerala.",
         hero_btn_trial: "Prenota una Lezione di Prova",
         hero_btn_courses: "Orari & Tariffe",
-        badge_loc: "Oltre 28 Anni a Sorengo (Lugano)",
+        badge_loc: "Oltre 30 Anni a Sorengo (Lugano)",
         badge_teacher: "Maestro & Guida Spirituale",
         badge_tradition: "Lineaggio dei Maestri Himalayani",
         badge_retreats: "Ashram & Ritiri in Kerala (India)",
@@ -1106,8 +1136,14 @@
         retreat_heading: "Ritiri Residenziali a Santhivanam Ashram (Kerala, India)",
         retreat_p1: "Gli allievi di Parvati Scuola di Yoga hanno l'opportunità unica di proseguire la loro pratica nei ritiri residenziali presso il nostro ashram in India: Santhivanam Yoga Ashram a Kanakamala, Kerala.",
         retreat_p2: "Tra colline tropicali incontaminate, cibo ayurvedico puro e sadhana quotidiana con l'Acharya Sooryanarayan, l'esperienza a Santhivanam trasforma la comprensione dello yoga in un'esperienza vivente e profondamente rigenerativa.",
-        link_santhivanam: "Visita Santhivanam.com ↗",
-        link_kayakalpa: "Visita Kayakalpayogam.com ↗",
+        retreat_status_badge: "Date in Arrivo",
+        retreat_status_title: "Prossimi Ritiri a Santhivanam",
+        retreat_status_desc: "Le nuove date e il programma ufficiale per l'Ashram in Kerala verranno annunciati a breve.",
+        retreat_wa_inquire: "Richiedi Info in Anteprima",
+        kayakalpa_status_badge: "Novità in Arrivo",
+        kayakalpa_status_title: "Kaya Kalpa &amp; Rigenerazione",
+        kayakalpa_status_desc: "Informazioni entusiasmanti e approfondimenti sui seminari speciali in arrivo a breve.",
+        kayakalpa_view_course: "Scopri il Metodo nei Corsi",
         contact_tag: "Inizia il Tuo Percorso",
         contact_heading: "Contattaci & Prenota la Tua Lezione",
         contact_sub: "La scuola è situata a Sorengo in Via Ponte Tresa 7B, a 5 minuti dal centro di Lugano. Scrivici su WhatsApp o compila il modulo sottostante.",
@@ -1163,12 +1199,12 @@
         nav_schedule: "Timetable & Rates",
         nav_retreats: "Kerala Retreats",
         nav_contact: "Contact",
-        hero_badge: "Founded in 1996 in Sorengo-Lugano • Over 28 Years of Tradition",
+        hero_badge: "Founded in 1996 in Sorengo-Lugano • Over 30 Years of Tradition",
         hero_title_sub: "Authentic Yogic Tradition",
         hero_description: "An authentic, serene sanctuary in Sorengo-Lugano at Via Ponte Tresa 7B. Guided directly by Acharya Sooryanarayan (Mohan) for Hatha Yoga, Maha Kundalini Yoga, Kaya Kalpa, Karma Reading & Healing sessions, Ayurvedic Body Cleaning, and retreats in Kerala.",
         hero_btn_trial: "Book a Trial Class",
         hero_btn_courses: "Timetable & Rates",
-        badge_loc: "Over 28 Years in Sorengo (Lugano)",
+        badge_loc: "Over 30 Years in Sorengo (Lugano)",
         badge_teacher: "Master & Spiritual Guide",
         badge_tradition: "Lineage of Himalayan Masters",
         badge_retreats: "Ashram & Retreats in Kerala (India)",
@@ -1255,8 +1291,14 @@
         retreat_heading: "Residential Retreats at Santhivanam Ashram (Kerala, India)",
         retreat_p1: "Students of Parvati Yoga School enjoy the special privilege of advancing their sadhana during residential retreats at our ashram in India: Santhivanam Yoga Ashram in Kanakamala, Kerala.",
         retreat_p2: "Surrounded by pristine tropical hills, pure Ayurvedic nourishment, and daily immersion with Acharya Sooryanarayan, retreats at Santhivanam transform yoga into an alive, rejuvenating reality.",
-        link_santhivanam: "Visit Santhivanam.com ↗",
-        link_kayakalpa: "Visit Kayakalpayogam.com ↗",
+        retreat_status_badge: "Dates Coming Soon",
+        retreat_status_title: "Upcoming Santhivanam Retreats",
+        retreat_status_desc: "Official dates and residential program for the Kerala Ashram will be announced shortly.",
+        retreat_wa_inquire: "Inquire for Early Access",
+        kayakalpa_status_badge: "Exciting Updates Soon",
+        kayakalpa_status_title: "Kaya Kalpa &amp; Cellular Renewal",
+        kayakalpa_status_desc: "Exciting new insights and special workshop details coming very soon.",
+        kayakalpa_view_course: "Discover Method in Courses",
         contact_tag: "Begin Your Practice",
         contact_heading: "Contact & Book Your Class",
         contact_sub: "Located at Via Ponte Tresa 7B in Sorengo, just 5 minutes from central Lugano. Reach us directly on WhatsApp or submit the form below.",
