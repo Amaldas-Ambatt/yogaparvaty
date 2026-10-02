@@ -943,20 +943,27 @@
         </div>
 
         <!-- Content Area -->
-        <div id="modalContentCol" class="md:w-[40%] p-6 sm:p-8 lg:p-10 flex flex-col justify-between overflow-y-auto max-h-[46vh] md:max-h-[90vh] bg-ivory">
-          <div>
-            <div id="modalCat" class="text-roseTerracotta font-display text-xs font-bold uppercase tracking-wider mb-2"></div>
-            <h3 id="modalTitle" class="font-serif text-2xl sm:text-3xl font-bold text-alpineForest mb-3"></h3>
-            <div class="w-12 h-0.5 bg-templeGold mb-4"></div>
-            <div id="modalDesc" class="text-xs sm:text-sm text-mutedSlate leading-relaxed space-y-3 font-sans"></div>
+        <div id="modalContentCol" class="md:w-1/2 lg:w-[50%] p-6 sm:p-8 lg:p-12 flex flex-col justify-between overflow-y-auto max-h-[48vh] md:max-h-[92vh] bg-ivory">
+          <div class="my-auto py-2 sm:py-4">
+            <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-parvatiSand/60 border border-templeGold/40 text-[11px] font-semibold text-alpineForest-deep tracking-wider uppercase mb-4 shadow-sm" data-i18n="modal_studio_tag">
+              🕉️ Parvati Scuola di Yoga • Sorengo
+            </div>
+            <div id="modalCat" class="text-roseTerracotta font-display text-xs sm:text-sm font-bold uppercase tracking-widest mb-3"></div>
+            <h3 id="modalTitle" class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-alpineForest leading-tight mb-4"></h3>
+            <div class="w-16 h-1 bg-gradient-to-r from-templeGold to-roseTerracotta rounded-full mb-6"></div>
+            <div id="modalDesc" class="text-sm sm:text-base lg:text-lg text-alpineForest/85 leading-relaxed sm:leading-loose font-sans space-y-4"></div>
+            <div class="mt-8 pt-5 border-t border-parvatiSand/50 flex items-center gap-2.5 text-xs text-mutedSlate">
+              <span class="w-2.5 h-2.5 rounded-full bg-templeGold shrink-0 shadow-sm"></span>
+              <span data-i18n="modal_acharya_guide">Guidato direttamente dall'Acharya Sooryanarayan</span>
+            </div>
           </div>
 
           <div class="pt-6 mt-6 border-t border-parvatiSand/60 flex flex-col sm:flex-row gap-3 shrink-0">
-            <a id="modalWaBtn" href="" target="_blank" class="flex-1 py-3 px-5 rounded-full bg-roseTerracotta hover:bg-roseTerracotta-dark text-white font-medium text-xs sm:text-sm tracking-wider uppercase transition shadow-md text-center flex items-center justify-center gap-2">
+            <a id="modalWaBtn" href="" target="_blank" class="flex-1 py-3.5 px-6 rounded-full bg-roseTerracotta hover:bg-roseTerracotta-dark text-white font-medium text-xs sm:text-sm tracking-wider uppercase transition shadow-md text-center flex items-center justify-center gap-2">
               <span>💬</span>
               <span id="modalWaBtnText">Prenota su WhatsApp</span>
             </a>
-            <button onclick="closeDetailModal()" class="py-3 px-5 rounded-full border border-parvatiSand hover:border-alpineForest text-alpineForest text-xs sm:text-sm font-semibold tracking-wider uppercase transition text-center cursor-pointer" data-i18n="modal_close">
+            <button onclick="closeDetailModal()" class="py-3.5 px-6 rounded-full border border-parvatiSand hover:border-alpineForest text-alpineForest text-xs sm:text-sm font-semibold tracking-wider uppercase transition text-center cursor-pointer" data-i18n="modal_close">
               Chiudi
             </button>
           </div>
@@ -1137,7 +1144,9 @@
         modal_close: "Chiudi",
         modal_wa_btn: "Prenota su WhatsApp",
         modal_view_full: "Visualizza alta risoluzione ↗",
-        modal_zoom_hint: "Apri a schermo intero"
+        modal_zoom_hint: "Apri a schermo intero",
+        modal_studio_tag: "🕉️ Parvati Scuola di Yoga • Sorengo",
+        modal_acharya_guide: "Guidato direttamente dall'Acharya Sooryanarayan"
       },
       en: {
         doc_title: "Parvati Yoga School | Sorengo - Lugano & Santhivanam India",
@@ -1284,7 +1293,9 @@
         modal_close: "Close",
         modal_wa_btn: "Inquire on WhatsApp",
         modal_view_full: "View High Resolution ↗",
-        modal_zoom_hint: "Open Fullscreen"
+        modal_zoom_hint: "Open Fullscreen",
+        modal_studio_tag: "🕉️ Parvati Yoga School • Sorengo",
+        modal_acharya_guide: "Personally guided by Acharya Sooryanarayan"
       }
     };
 
@@ -1470,12 +1481,12 @@
         img.className = "w-full max-h-[66vh] object-contain rounded-2xl shadow-2xl border border-white/10 mx-auto";
         contentCol.className = "w-full p-6 sm:p-8 bg-ivory flex flex-col md:flex-row md:items-center justify-between gap-6 border-t border-parvatiSand/60";
       } else {
-        // Two-column layout for portrait artworks (up to 82vh height and 62% width)
+        // Two-column layout for portrait artworks (up to 82vh height and 50/50 balanced width)
         box.className = "bg-white rounded-3xl max-w-6xl xl:max-w-7xl w-full max-h-[94vh] overflow-hidden shadow-2xl border border-templeGold/30 flex flex-col relative transform transition-all duration-300 scale-100";
         wrapper.className = "flex flex-col md:flex-row w-full h-full overflow-hidden";
-        imgCol.className = "md:w-[58%] lg:w-[62%] bg-alpineForest-deep p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center relative min-h-[340px] md:min-h-[580px] shrink-0";
+        imgCol.className = "md:w-1/2 lg:w-[50%] bg-alpineForest-deep p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center relative min-h-[340px] md:min-h-[580px] shrink-0";
         img.className = "max-h-[48vh] md:max-h-[82vh] w-auto h-auto max-w-full object-contain rounded-2xl shadow-2xl border border-white/10";
-        contentCol.className = "md:w-[42%] lg:w-[38%] p-6 sm:p-8 lg:p-10 flex flex-col justify-between overflow-y-auto max-h-[46vh] md:max-h-[90vh] bg-ivory";
+        contentCol.className = "md:w-1/2 lg:w-[50%] p-6 sm:p-8 lg:p-12 flex flex-col justify-between overflow-y-auto max-h-[48vh] md:max-h-[92vh] bg-ivory";
       }
 
       modal.classList.remove('opacity-0', 'pointer-events-none');
