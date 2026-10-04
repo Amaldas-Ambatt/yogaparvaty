@@ -3,9 +3,10 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yogaparvaty.com/</loc>
-    <xhtml:link rel="alternate" hreflang="it" href="https://yogaparvaty.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yogaparvaty.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yogaparvaty.com/" />
-    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://yogaparvaty.com/" />
+    <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
